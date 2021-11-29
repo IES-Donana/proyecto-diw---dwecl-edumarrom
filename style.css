@@ -11,17 +11,27 @@ body {
   box-shadow: 8px 8px 14px 8px rgba(0, 0, 0, 0.25);
 }
 
+#bienvenida h1 {
+  font-size: 4em;
+}
+
+#bienvenida p {
+  font-size: 3em;
+  font-weight: normal;
+}
+
 #testimonio1 p {
   font-size: 2em;
 }
 
-#testimonio1 small {
-  font-size: 0.5em;
+#testimonio1 q {
+  display: block;
+  font-size: 2em;
 }
 
-cite {
-  font-size: 2em;
-  font-style: normal;
+#testimonio1 div:last-of-type {
+  font-size: 0.75em;
+  text-align: right;
 }
 
 .autor {
@@ -29,5 +39,21 @@ cite {
   height: 460px;
   overflow: hidden;
   border: 5px solid black;
+}
 
+#proyectos h2 {
+  font-size: 4em;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Antes funcionaba. Ahora no :) */
+#proyectos h2>p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.columnas {
+  display: flex;
+  flex-direction: row;
 }
