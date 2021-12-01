@@ -11,8 +11,28 @@ body {
   box-shadow: 8px 8px 14px 8px rgba(0, 0, 0, 0.25);
 }
 
-#bienvenida h1 {
+h1 {
   font-size: 4em;
+}
+
+h2 {
+  font-size: 4em;
+  font-weight: normal;
+  text-align: center;
+}
+
+#bienvenida {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#bienvenida-texto {
+  width: 576px;
+}
+
+#bienvenida-imagen {
+  width: 576px;
 }
 
 #bienvenida p {
@@ -20,35 +40,23 @@ body {
   font-weight: normal;
 }
 
-#testimonio1 p {
+#testimonio-1 p {
   font-size: 2em;
 }
 
-#testimonio1 q {
+#testimonio-1 q {
   display: block;
   font-size: 2em;
 }
 
-#testimonio1 div:last-of-type {
+#testimonio-1 div:last-of-type {
   font-size: 0.75em;
   text-align: right;
 }
 
-.autor {
-  width: 460px;
-  height: 460px;
-  overflow: hidden;
-  border: 5px solid black;
-}
 
-#proyectos h2 {
-  font-size: 4em;
-  font-weight: normal;
-  text-align: center;
-}
-
-/* Antes funcionaba. Ahora no :) */
-#proyectos h2>p {
+#proyectos h2+p {
+  margin-top: -25px;
   font-size: 1.5em;
   text-align: center;
 }
@@ -56,4 +64,34 @@ body {
 .columnas {
   display: flex;
   flex-direction: row;
+}
+
+#cv-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#fechas {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  font-weight: bold;
+  justify-content: space-around;
+}
+
+#sobre-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#sobre-texto {
+  width: 576px;
+  font-size: larger;
+}
+
+#sobre-imagen {
+  display: flex;
+  width: 576px;
+  justify-content: center;
 }
