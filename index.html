@@ -23,7 +23,7 @@
       </div>
     </section>
 
-    <section id="testimonio-1" class="tarjeta">
+    <section class="tarjeta testimonio">
       <div>
         <p>
           <q>Con Eduardo, un buen genio entró en mi oficina.</q>
@@ -38,15 +38,18 @@
 
     <div class="tarjeta">
       <section id="proyectos">
-        <div class="cabecera">
+        <div>
           <h2>Bueno...<br>¿y cómo es mi trabajo?</h2>
           <p>Pues para muestra un botón (o varios)</p>
         </div>
 
-        <div class="columnas">
-          <div>
-            <h3>Rentoy</h3>
-            <small>Juego de naipes</small>
+        <div class="proyecto-wrapper">
+          <div class="proyecto">
+            <div class="proyecto-cabecera">
+              <h3>Rentoy</h3>
+              <small>Juego de naipes</small>
+              <div id="cartas"></div>
+            </div>
             <p>
               Desde que comencé a estudiar programación me preguntaba como
               sería desarrollar el juego del Rentoy. Ahora lo sé, y es
@@ -54,9 +57,12 @@
             </p>
           </div>
 
-          <div>
-            <h3>Recordor</h3>
-            <small>Notas y tareas</small>
+          <div class="proyecto">
+            <div class="proyecto-cabecera">
+              <h3>Recordor</h3>
+              <small>Notas y tareas</small>
+              <div id="notas"></div>
+            </div>
             <p>
               Nadie se entiende mejor que uno mismo cuando se trata de
               organizar nuestras ideas. ¿Por qué no hacer entonces tu
@@ -64,9 +70,12 @@
             </p>
           </div>
 
-          <div>
-            <h3>Chō-han</h3>
-            <small>Juego de dados</small>
+          <div class="proyecto">
+            <div class="proyecto-cabecera">
+              <h3>Chō-han</h3>
+              <small>Juego de dados</small>
+              <div id="dado"></div>
+            </div>
             <p>
               Todo empezó por curiosear como implementar un dado.
               Del dado pasé a un cubilete, y cuando quise darme cuenta
@@ -79,7 +88,7 @@
       <hr>
 
       <section id="cv">
-        <div>
+        <div id="cv-cabecera">
           <h2>¿Y dónde he estado todo este tiempo?</h2>
         </div>
 
@@ -90,10 +99,12 @@
             <p>2016-2017</p>
           </div>
 
-          <div id="experiencias">
-            <div class="tarjeta">
-              <h3>Cristóbal Anillo</h3>
-              <div>
+          <div id="experiencia-wrapper">
+            <div class="experiencia">
+              <div class="experiencia-cabecera">
+                <h3>Cristóbal Anillo</h3>
+              </div>
+              <div class="tarjeta">
                 <p>
                   La vida da muchas vueltas... y darlas en barco es mucho mejor.
                   Realizábamos visitas al P.N. Doñana en un recorrido fluvial
@@ -102,9 +113,11 @@
               </div>
             </div>
 
-            <div class="tarjeta">
-              <h3>Arvato - Bertelsmann</h3>
-              <div>
+            <div class="experiencia">
+              <div class="experiencia-cabecera">
+                <h3>Arvato - Bertelsmann</h3>
+              </div>
+              <div class="tarjeta">
                 <p>
                   Participé en un proyecto de CRM donde gestionaba una cartera de
                   clientes particulares, a los que asesoraba tanto a nivel
@@ -113,9 +126,11 @@
               </div>
             </div>
 
-            <div class="tarjeta">
-              <h3>Techmakers</h3>
-              <div>
+            <div class="experiencia">
+              <div class="experiencia-cabecera">
+                <h3>Techmakers</h3>
+              </div>
+              <div class="tarjeta">
                 <p>
                   Siempre me ha llamado el mundo de la docencia, y aquí tuve la
                   oportunidad de impartir cursos de STEM a grupos escolares,
@@ -128,13 +143,10 @@
       </section>
     </div>
 
-    <section class="tarjeta">
-      <div>
-        <h2>¿Y qué más hago aparte de trabajar?</h2>
-      </div>
-
+    <section class="tarjeta guitarra">
       <div id="sobre-wrapper">
         <div id="sobre-texto">
+          <p id="sobre-cabecera">¿Y qué más hago aparte de trabajar?</p>
           <p>
             Hay muchas cosas de las que podría hablar. Una de mis aficiones es la
             música. Desde pequeño tuve interes en los instrumentos y entre ellos la
@@ -157,11 +169,23 @@
 
         <div id="sobre-imagen">
           <div>
-            <img src="/mmedia/images/paco-castillo.png" width="288" height="460" alt="Guitarra">
+            <!-- <img src="/mmedia/images/paco-castillo.png" width="288" height="460" alt="Guitarra"> -->
           </div>
         </div>
       </div>
+    </section>
 
+    <section class="tarjeta testimonio">
+      <div>
+        <p>
+          <q>Me gusta trabajar con Eduardo. Hace cosas.</q>
+          <cite>—Señor Aleatorio</cite>
+        </p>
+      </div>
+
+      <div>
+        <p><small>Fundador de la Startup 4Nerds</small></p>
+      </div>
     </section>
   </div>
 </body>

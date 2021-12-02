@@ -21,6 +21,16 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+h3+small {
+  margin-top: -45px;
+  margin-bottom: 30px;
+}
+
 #bienvenida {
   display: flex;
   flex-direction: row;
@@ -28,11 +38,11 @@ h2 {
 }
 
 #bienvenida-texto {
-  width: 576px;
+  width: 50%;
 }
 
 #bienvenida-imagen {
-  width: 576px;
+  width: 50%;
 }
 
 #bienvenida p {
@@ -40,16 +50,16 @@ h2 {
   font-weight: normal;
 }
 
-#testimonio-1 p {
+.testimonio p {
   font-size: 2em;
 }
 
-#testimonio-1 q {
+.testimonio q {
   display: block;
   font-size: 2em;
 }
 
-#testimonio-1 div:last-of-type {
+.testimonio div:last-of-type {
   font-size: 0.75em;
   text-align: right;
 }
@@ -61,14 +71,66 @@ h2 {
   text-align: center;
 }
 
-.columnas {
+.proyecto-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+}
+
+.proyecto {
+  width: 25%;
+}
+
+.proyecto-cabecera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cartas {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  border: 3px solid #000;
+  background: url('/mmedia/images/cartas.jpg');
+  background-size: 367px 367px;
+  background-position: 45% -10%;
+  background-repeat: no-repeat;
+  transform: rotate(-25deg);
+}
+
+#notas {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  border: 3px solid #000;
+  background: url('/mmedia/images/notas.jpg');
+  background-size: 445px 251px;
+  background-position: 55% 40%;
+  background-repeat: no-repeat;
+  transform: rotate(-15deg);
+}
+
+#dado {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  border: 3px solid #000;
+  background: url('/mmedia/images/dado.jpg');
+  background-size: 295px 284px;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  transform: rotate(-20deg);
+}
+
+#cv-cabecera {
+  margin-bottom: -5%;
 }
 
 #cv-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 #fechas {
@@ -79,19 +141,64 @@ h2 {
   justify-content: space-around;
 }
 
+#fechas p{
+  font-size: x-large;
+  font-weight: normal;
+}
+
+.experiencia-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencia-cabecera {
+  margin-left: 4%;
+  margin-bottom: -4%;
+}
+
+.experiencia {
+  font-size: larger;
+}
+
 #sobre-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #sobre-texto {
-  width: 576px;
+  width: 50%;
   font-size: larger;
+}
+
+#sobre-cabecera {
+  font-size: 3.5em;
+  font-weight: normal;
+  text-align: center;
 }
 
 #sobre-imagen {
   display: flex;
-  width: 576px;
+  width: 50%;
   justify-content: center;
+  align-self: center;
+}
+
+.guitarra {
+  position: relative;
+  z-index: 1;
+}
+
+.guitarra::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('/mmedia/images/paco-castillo.png');
+  background-position: right -440px bottom -150px;
+  background-repeat: no-repeat;
+  opacity: .2;
 }
