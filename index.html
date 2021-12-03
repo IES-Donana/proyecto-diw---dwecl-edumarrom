@@ -5,11 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+  <script src="script/menu.js" defer></script>
   <title>Eduardo Martínez - PortFolio</title>
 </head>
 <body>
+  <div class="menu-btn">
+    <div class="menu-btn_burger"></div>
+  </div>
+  <div id ="menu" class="menu-container active">
+    <ul>
+      <a href="#bienvenida"><li>Bienvenida</li></a>
+      <a href="#proyectos"><li>Proyectos</li></a>
+      <a href="#cv"><li>Experiencia</li></a>
+      <a href="#sobre"><li>Sobre mí</li></a>
+      <a href="#contacto"><li>Contacto</li></a>
+    </ul>
+  </div>
   <div class="container">
-    <section id="bienvenida" class="tarjeta">
+    <section id="bienvenida" class="tarjeta bienvenida">
       <div id="bienvenida-texto">
         <h1>Hey Hello!</h1>
         <p>
@@ -49,7 +63,7 @@
             <div class="proyecto-cabecera">
               <h3>Rentoy</h3>
               <small>Juego de naipes</small>
-              <div id="cartas"></div>
+              <div id="proyecto-imagen-cartas"></div>
             </div>
             <p>
               Desde que comencé a estudiar programación me preguntaba como
@@ -62,7 +76,7 @@
             <div class="proyecto-cabecera">
               <h3>Recordor</h3>
               <small>Notas y tareas</small>
-              <div id="notas"></div>
+              <div id="proyecto-imagen-notas"></div>
             </div>
             <p>
               Nadie se entiende mejor que uno mismo cuando se trata de
@@ -75,7 +89,7 @@
             <div class="proyecto-cabecera">
               <h3>Chō-han</h3>
               <small>Juego de dados</small>
-              <div id="dado"></div>
+              <div id="proyecto-imagen-dado"></div>
             </div>
             <p>
               Todo empezó por curiosear como implementar un dado.
@@ -144,7 +158,7 @@
       </section>
     </div>
 
-    <section class="tarjeta guitarra">
+    <section id="sobre" class="tarjeta guitarra">
       <div id="sobre-wrapper">
         <div id="sobre-texto">
           <p id="sobre-cabecera">¿Y qué más hago aparte de trabajar?</p>

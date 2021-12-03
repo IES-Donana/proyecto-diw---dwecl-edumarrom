@@ -12,7 +12,8 @@ body {
 }
 
 h1 {
-  font-size: 4em;
+  margin-top: 2em;
+  font-size: 5em;
 }
 
 h2 {
@@ -32,6 +33,7 @@ h3+small {
 }
 
 #bienvenida {
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -43,6 +45,27 @@ h3+small {
 
 #bienvenida-imagen {
   width: 50%;
+}
+
+.bienvenida {
+  position: relative;
+  z-index: 1;
+}
+
+.bienvenida::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('/mmedia/images/yo.jpg');
+  background-size: 60%;
+  background-position: right 0 top -30px;
+  background-repeat: no-repeat;
+  opacity: .6;
+  filter: grayscale();
 }
 
 #bienvenida p {
@@ -110,7 +133,7 @@ h3+small {
   align-items: center;
 }
 
-#cartas {
+#proyecto-imagen-cartas {
   width: 250px;
   height: 250px;
   border-radius: 250px;
@@ -123,7 +146,7 @@ h3+small {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
 }
 
-#notas {
+#proyecto-imagen-notas {
   width: 250px;
   height: 250px;
   border-radius: 250px;
@@ -136,7 +159,7 @@ h3+small {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
 }
 
-#dado {
+#proyecto-imagen-dado {
   width: 250px;
   height: 250px;
   border-radius: 250px;
