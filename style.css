@@ -228,3 +228,48 @@ h3+small {
   background-repeat: no-repeat;
   opacity: .2;
 }
+
+.contacto-wrapper {
+  margin: 4%;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.entrada {
+  margin: 0 0 2em 0;
+}
+
+.entrada input {
+  height: 2em;
+  padding: 0 8px 0 8px;
+}
+
+.entrada textarea {
+  padding: 0 16px 0 16px;
+  font-size: 2em;
+}
+
+.entrada input,
+.entrada textarea {
+  font-family: sans-serif;
+  font-size: 1.2em;
+  background: rgba(218, 218, 218, 0.2);
+  border: rgba(218, 218, 218, 0.2);
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+.entrada button {
+  width: 160px;
+  height: 2.5em;
+  color: #fff;
+  font-size: 1.2em;
+  background-color: #3b6ea5;
+  border: #3b6ea5;
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
