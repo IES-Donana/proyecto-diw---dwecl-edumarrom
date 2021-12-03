@@ -6,7 +6,7 @@ body {
 .tarjeta {
   margin: 4%;
   padding: 1%;
-  background: rgba(218, 218, 218, 0.1);
+  background: rgba(218, 218, 218, 0.2);
   border-radius: 20px;
   box-shadow: 8px 8px 14px 8px rgba(0, 0, 0, 0.25);
 }
@@ -64,6 +64,29 @@ h3+small {
   text-align: right;
 }
 
+#testimonio-autor {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+  margin-right: 25px;
+}
+
+#testimonio-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 400px;
+  background: url('/mmedia/images/diogenes.jpg');
+  background-size: 545px 817px;
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  transform: rotate(5deg);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+#testimonio-video {
+  align-self: center;
+}
 
 #proyectos h2+p {
   margin-top: -25px;
@@ -97,6 +120,7 @@ h3+small {
   background-position: 45% -10%;
   background-repeat: no-repeat;
   transform: rotate(-25deg);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
 }
 
 #notas {
@@ -109,6 +133,7 @@ h3+small {
   background-position: 55% 40%;
   background-repeat: no-repeat;
   transform: rotate(-15deg);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
 }
 
 #dado {
@@ -121,6 +146,7 @@ h3+small {
   background-position: 50% 80%;
   background-repeat: no-repeat;
   transform: rotate(-20deg);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
 }
 
 #cv-cabecera {
