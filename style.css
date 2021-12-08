@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4em;
+  font-size: 3.75em;
   font-weight: normal;
   text-align: center;
 }
@@ -69,7 +69,7 @@ h3+small {
   right: 0;
   background-image: url('/mmedia/images/yo.jpg');
   background-size: 60%;
-  background-position: right 0 top -30px;
+  background-position: right 0% bottom 90%;
   background-repeat: no-repeat;
   opacity: .6;
   filter: grayscale();
@@ -103,11 +103,11 @@ h3+small {
 }
 
 #testimonio-img {
-  width: 400px;
-  height: 400px;
-  border-radius: 400px;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 30vw;
   background: url('/mmedia/images/diogenes.jpg');
-  background-size: 545px 817px;
+  background-size: 140% 200%;
   background-position: 50% 10%;
   background-repeat: no-repeat;
   transform: rotate(5deg);
@@ -141,12 +141,12 @@ h3+small {
 }
 
 #proyecto-imagen-cartas {
-  width: 250px;
-  height: 250px;
-  border-radius: 250px;
+  width: 18vw;
+  height: 18vw;
+  border-radius: 18vw;
   border: 3px solid #000;
   background: url('/mmedia/images/cartas.jpg');
-  background-size: 367px 367px;
+  background-size: 150% 150%;
   background-position: 45% -10%;
   background-repeat: no-repeat;
   transform: rotate(-25deg);
@@ -154,12 +154,12 @@ h3+small {
 }
 
 #proyecto-imagen-notas {
-  width: 250px;
-  height: 250px;
-  border-radius: 250px;
+  width: 18vw;
+  height: 18vw;
+  border-radius: 18vw;
   border: 3px solid #000;
   background: url('/mmedia/images/notas.jpg');
-  background-size: 445px 251px;
+  background-size: 180% 110%;
   background-position: 55% 40%;
   background-repeat: no-repeat;
   transform: rotate(-15deg);
@@ -167,16 +167,23 @@ h3+small {
 }
 
 #proyecto-imagen-dado {
-  width: 250px;
-  height: 250px;
-  border-radius: 250px;
+  width: 18vw;
+  height: 18vw;
+  border-radius: 18vw;
   border: 3px solid #000;
   background: url('/mmedia/images/dado.jpg');
-  background-size: 295px 284px;
+  background-size: 115% 115%;
   background-position: 50% 80%;
   background-repeat: no-repeat;
   transform: rotate(-20deg);
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  margin: 5vh 10vw;
+  border: 3px solid #cacaca;
+  border-radius: 3px;
+  box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 #cv-cabecera {
