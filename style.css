@@ -27,6 +27,13 @@ h3 {
   font-weight: normal;
 }
 
+h4 {
+  margin-top: .5em;
+  font-size: 2em;
+  font-weight: normal;
+  text-align: center;
+}
+
 h3+small {
   margin-top: -45px;
   margin-bottom: 30px;
@@ -195,6 +202,10 @@ h3+small {
   font-weight: normal;
 }
 
+#linea-temporal {
+  width: 40vw;
+}
+
 .experiencia-wrapper {
   display: flex;
   flex-direction: column;
@@ -207,6 +218,34 @@ h3+small {
 
 .experiencia {
   font-size: larger;
+}
+
+.experiencia p {
+  font-size: larger;
+}
+
+#real-fernando {
+  padding-left: 20vw;
+  background: url('/mmedia/images/real-fernando.jpg');
+  background-size: 34%;
+  background-position: 0;
+  background-repeat: no-repeat;
+}
+
+#arvato {
+  padding-left: 20vw;
+  background: url('/mmedia/images/arvato.png');
+  background-size: 34%;
+  background-position: 0;
+  background-repeat: no-repeat;
+}
+
+#techmakers {
+  padding-left: 20vw;
+  background: url('/mmedia/images/techmakers.png');
+  background-size: 34%;
+  background-position: 0;
+  background-repeat: no-repeat;
 }
 
 #sobre-wrapper {
@@ -294,5 +333,31 @@ h3+small {
   border: #3b6ea5;
   border-radius: 15px;
   box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+footer {
+  padding-top: .5em;
+  bottom: 0;
+  width: 100vw;
+  height: 30vh;
+  background-color: rgba(59, 110, 165, 0.5);
+  box-shadow: 0 -8px 14px 0 rgba(0, 0, 0, 0.25);
+}
+
+.social-wrapper {
+  margin: 0 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social:hover {
   cursor: pointer;
 }

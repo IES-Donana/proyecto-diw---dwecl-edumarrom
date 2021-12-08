@@ -114,12 +114,14 @@
             <p>2016-2017</p>
           </div>
 
+          <div id="linea-temporal"></div>
+
           <div id="experiencia-wrapper">
             <div class="experiencia">
               <div class="experiencia-cabecera">
                 <h3>Cristóbal Anillo</h3>
               </div>
-              <div class="tarjeta">
+              <div class="tarjeta" id="real-fernando">
                 <p>
                   La vida da muchas vueltas... y darlas en barco es mucho mejor.
                   Realizábamos visitas al P.N. Doñana en un recorrido fluvial
@@ -132,7 +134,7 @@
               <div class="experiencia-cabecera">
                 <h3>Arvato - Bertelsmann</h3>
               </div>
-              <div class="tarjeta">
+              <div class="tarjeta" id="arvato">
                 <p>
                   Participé en un proyecto de CRM donde gestionaba una cartera de
                   clientes particulares, a los que asesoraba tanto a nivel
@@ -145,7 +147,7 @@
               <div class="experiencia-cabecera">
                 <h3>Techmakers</h3>
               </div>
-              <div class="tarjeta">
+              <div class="tarjeta" id="techmakers">
                 <p>
                   Siempre me ha llamado el mundo de la docencia, y aquí tuve la
                   oportunidad de impartir cursos de STEM a grupos escolares,
@@ -164,21 +166,20 @@
           <p id="sobre-cabecera">¿Y qué más hago aparte de trabajar?</p>
           <p>
             Hay muchas cosas de las que podría hablar. Una de mis aficiones es la
-            música. Desde pequeño tuve interes en los instrumentos y entre ellos la
+            música. Desde pequeño tuve interés en los instrumentos y entre ellos la
             guitarra. Lo que a mi me gustó desde el principio fueron los bajos eléctricos.
-            Pero en casa lo que había era una elegante y vieja guitarra clásica.
-            Con ella descubrí lo relajante que puede ser sentarse a practicar.
-            Mi aprendizaje ha sido puramente autodidacta, y eso tiene sus defectos,
-            pero como nunca me voy a dedicar a la música ni me preocupo.
+            pero en casa lo que había era una elegante y vieja guitarra clásica.
+            Con ella descubrí lo gratificante de interpretar música y lo relajante que puede
+            ser sentarse a practicar y lograr hacer sonar los temas que te propones.
+            Mi técnica deja mucho que desear, pero eso no me impide disfrutar muchísimo de ella.
           </p>
 
           <p>
-            Aparte considero que tocar un instrumento sin duda me ayudó a interesarme
-            más por la música desde un punto de vista más general, sobre como interactuamos
-            con ella, sus efectos sobre nosotros, los factores que determinan por qué
-            sentimos ciertas cosas al esuchar ciertos tonos. La música parece trascender de
-            ser no sólo algo recreativo, sino algo tan importante como un tratamiento para
-            nuestra salud.
+            Tocar un instrumento me ayudó a interesarme por la música desde un punto de vista
+            más general, sobre como interactuamos con ella, sus efectos sobre nosotros, los
+            factores que determinan por qué sentimos ciertas cosas al escuchar ciertos tonos.
+            La música parece trascender de ser no sólo algo recreativo, sino algo tan importante
+            como un tratamiento para nuestra salud y bienestar.
           </p>
         </div>
 
@@ -216,35 +217,57 @@
           <div class="entrada">
             <label for="nombre" />
             <input type="text" name="nombre" id="nombre"
-              maxlength="255" placeholder="Tu nombre">
+              required pattern="^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s]{2,44}"
+              maxlength="45" placeholder="Tu nombre">
           </div>
 
           <div class="entrada">
             <label for="email" />
             <input type="email" name="email" id="mail"
+              required pattern="^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$"
               maxlength="255" placeholder="Tu email">
           </div>
 
           <div class="entrada">
             <label for="asunto" />
             <input type="text" name="asunto" id="asunto"
-              maxlength="255" placeholder="Asunto">
+              required maxlength="255" placeholder="Asunto">
           </div>
 
           <div class="entrada">
-            <label for="me  nsaje" />
+            <label for="mensaje" />
             <textarea name="mensaje" id="mensaje"
-              cols="85" rows="10" maxlength="255"
-              placeholder="Hey hello...">
-            </textarea>
+              required cols="85" rows="10" maxlength="255" placeholder="Hey hello..."></textarea>
           </div>
-
           <div class="entrada">
-            <button type="submit">¡Vamos allá!</button>
+            <button type="submit" id="enviar">¡Vamos allá!</button>
           </div>
         </div>
       </form>
     </section>
+
+    <footer>
+      <h4>Si me necesitas, ya sabes donde estoy</h4>
+      <div class="social-wrapper">
+        <div class="social">
+          <img src="/mmedia/icons/whatsapp.png" width="50px" alt="Teléfono">
+          <small>+34 666 66 66 66</small>
+        </div>
+        <div class="social">
+          <img src="/mmedia/icons/linkedin.png" width="50px" alt="Enlace a mi LikedIn">
+          <small>LinkedIn</small>
+        </div>
+        <div class="social">
+          <img src="/mmedia/icons/github.png" width="50px" alt="Enlace a mi GitHub">
+          <small>GitHub</small>
+        </div>
+        <div class="social">
+          <img src="/mmedia/icons/reddit.png" width="50px" alt="Enlace a mi Reddit">
+          <small>Reddit</small>
+        </div>
+
+      </div>
+    </footer>
   </div>
 
   <script src="main.js"></script>
