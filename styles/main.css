@@ -173,46 +173,35 @@ h3+small {
   align-items: center;
 }
 
-#cartas {
+.proyecto-imagen {
   width: 18vw;
   height: 18vw;
   border-radius: 18vw;
   border: 3px solid #000;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
+  transition: all .5s;
+}
+
+#cartas {
   background: url(/mmedia/images/cartas.jpg);
   background-size: 150% 150%;
   background-position: 45% -10%;
-  background-repeat: no-repeat;
   transform: rotate(-25deg);
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
-  transition: all .5s
 }
 
 #notas {
-  width: 18vw;
-  height: 18vw;
-  border-radius: 18vw;
-  border: 3px solid #000;
   background: url(/mmedia/images/notas.jpg);
   background-size: 180% 110%;
   background-position: 55% 40%;
-  background-repeat: no-repeat;
   transform: rotate(-15deg);
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
-  transition: all .5s
 }
 
 #dado {
-  width: 18vw;
-  height: 18vw;
-  border-radius: 18vw;
-  border: 3px solid #000;
   background: url(/mmedia/images/dado.jpg);
   background-size: 115% 115%;
   background-position: 50% 80%;
-  background-repeat: no-repeat;
   transform: rotate(-20deg);
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
-  transition: all .5s
 }
 
 #cartas:hover,
