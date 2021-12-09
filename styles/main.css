@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 body {
   background: #fff;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .tarjeta {
@@ -68,7 +71,7 @@ h3+small {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url('/mmedia/images/yo.jpg');
+  background-image: url(/mmedia/images/yo.jpg);
   background-size: 60%;
   background-position: right 0 bottom 90%;
   background-repeat: no-repeat;
@@ -123,7 +126,7 @@ h3+small {
   width: 30vw;
   height: 30vw;
   border-radius: 30vw;
-  background: url('/mmedia/images/diogenes.jpg');
+  background: url(/mmedia/images/diogenes.jpg);
   background-size: 140% 200%;
   background-position: 50% 10%;
   background-repeat: no-repeat;
@@ -175,7 +178,7 @@ h3+small {
   height: 18vw;
   border-radius: 18vw;
   border: 3px solid #000;
-  background: url('/mmedia/images/cartas.jpg');
+  background: url(/mmedia/images/cartas.jpg);
   background-size: 150% 150%;
   background-position: 45% -10%;
   background-repeat: no-repeat;
@@ -188,7 +191,7 @@ h3+small {
   height: 18vw;
   border-radius: 18vw;
   border: 3px solid #000;
-  background: url('/mmedia/images/notas.jpg');
+  background: url(/mmedia/images/notas.jpg);
   background-size: 180% 110%;
   background-position: 55% 40%;
   background-repeat: no-repeat;
@@ -201,7 +204,7 @@ h3+small {
   height: 18vw;
   border-radius: 18vw;
   border: 3px solid #000;
-  background: url('/mmedia/images/dado.jpg');
+  background: url(/mmedia/images/dado.jpg);
   background-size: 115% 115%;
   background-position: 50% 80%;
   background-repeat: no-repeat;
@@ -264,7 +267,7 @@ hr {
 #real-fernando {
   position: relative;
   padding-left: 20vw;
-  background: url('/mmedia/images/real-fernando.jpg');
+  background: url(/mmedia/images/real-fernando.jpg);
   background-size: 34%;
   background-position: 0;
   background-repeat: no-repeat;
@@ -287,7 +290,7 @@ hr {
 
 #arvato {
   padding-left: 20vw;
-  background: url('/mmedia/images/arvato.png');
+  background: url(/mmedia/images/arvato.png);
   background-size: 34%;
   background-position: 0;
   background-repeat: no-repeat;
@@ -295,7 +298,7 @@ hr {
 
 #techmakers {
   padding-left: 20vw;
-  background: url('/mmedia/images/techmakers.png');
+  background: url(/mmedia/images/techmakers.png);
   background-size: 34%;
   background-position: 0;
   background-repeat: no-repeat;
@@ -342,7 +345,7 @@ hr {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url('/mmedia/images/paco-castillo.png');
+  background-image: url(/mmedia/images/paco-castillo.png);
   background-position: left 30vw bottom -30vh;
   background-repeat: no-repeat;
   opacity: .2;
@@ -408,14 +411,14 @@ outline: 3px solid rgba(59, 110, 165, .5);
 }
 
 .entrada-error:invalid {
-  outline: 2px solid #a6723c;
+  outline: 2px solid #a5723b;
   background: rgba(166, 114, 60, .25);
 }
 
 .entrada-error-mensaje {
   margin-top: .5em;
   font-weight:bold ;
-  color: #a6723c;
+  color: #a5723b;
 }
 
 footer {
