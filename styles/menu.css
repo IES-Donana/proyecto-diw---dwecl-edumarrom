@@ -1,6 +1,6 @@
 .menu-container {
   background-color: #fefefe;
-  box-shadow: 2px 0 5px 2px #666666;
+  box-shadow: 2px 0 5px 2px #666;
   min-width: 20vw;
   height: 100vh;
   position: fixed;
@@ -14,7 +14,7 @@
 /* .menu-container::before {
   content: '';
   background-color: #fefefe;
-  box-shadow: 2px 0 5px 2px #666666;
+  box-shadow: 2px 0 5px 2px #666;
   width: 250px;
   height: 100vh;
   opacity: 0.2;

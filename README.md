@@ -1,7 +1,12 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6420795&assignment_repo_type=AssignmentRepo)
-# Proyecto DIW - DWECL
+# Proyecto DIW - DWECL: Portfolio
+## Eduardo Martínez Romero
+### Diseño de Interfaces Web
+### Desarrollo Web en Entorno Cliente
+#### 2ºDAW - IES Doñana
+***
 
-## ÍNDICE
+## Índice
 1. [Descripción](#descripcion)
 2. [Prototipo](#prototipo)
 3. [Modificaciones a la guía de estilos](#modificaciones)
@@ -32,10 +37,10 @@ He incluido alguna variedad más de gris para el texto y sombreado del menú des
 
 |HEX|Denominación|Descripción
 |-|-|-
-|#A6723C|Dark Gold|Color complementario del Azul Queen Blue (#3B6EA5) ya utilizado en el proyecto. Usado para advertir de errores de valiación en el formulario de contacto.
-|#FEFEFE|White|Tono de blanco usado en el fondo del menú desplegable. Ligeramente más claro que el usado en las tarjetas (#DADADA), para mejorar el contraste del menú sobre éstas.
-|#272727|Charleston Green|Tono de gris usado en el texto del menú desplegable.
-|#666|Granite Grey|Tono de gris usado para sombrear el menú desplegable.
+|<span style="background: #A6723C;">**#A6723C**</span>|Dark Gold|Color complementario del Royal Blue (<span style="background: #3B6EA5;">**#3B6EA5**</span>) ya utilizado en el proyecto. Usado para advertir de errores de valiación en el formulario de contacto.
+|<span style="background: #FEFEFE; color: #000">**#FEFEFE**</span>|White|Tono de blanco usado en el fondo del menú desplegable. Ligeramente más claro que el usado en las tarjetas (#DADADA), para mejorar el contraste del menú sobre éstas.
+|<span style="background: #272727; color: #fff">**#272727**</span>|Charleston Green|Tono de gris usado en el texto del menú desplegable.
+|<span style="background: #666; color: #fff">**#666**</span>|Granite Grey|Tono de gris usado para sombrear el menú desplegable.
 
 ## 4. Recursos<a id="recursos"></a>
 
