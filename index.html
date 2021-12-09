@@ -14,16 +14,27 @@
   <div class="menu-btn">
     <div class="menu-btn_burger"></div>
   </div>
-  <nav id ="menu" class="menu-container active">
+
+  <!-- burger era antes menu -->
+  <nav id ="burger" class="menu-container active">
     <ul>
-      <a href="#bienvenida"><li>Bienvenida</li></a>
+      <a href="#inicio"><li>Bienvenida</li></a>
       <a href="#proyectos"><li>Proyectos</li></a>
       <a href="#cv"><li>Experiencia</li></a>
       <a href="#sobre"><li>Sobre mí</li></a>
       <a href="#contacto"><li>Contacto</li></a>
     </ul>
   </nav>
-  <div class="container">
+
+  <div id="inicio" class="container">
+    <nav id ="menu">
+      <ul>
+        <a href="#proyectos"><li>Proyectos</li></a>
+        <a href="#cv"><li>Experiencia</li></a>
+        <a href="#sobre"><li>Sobre mí</li></a>
+        <a href="#contacto"><li>Contacto</li></a>
+      </ul>
+    </nav>
     <section id="bienvenida" class="tarjeta bienvenida">
       <div id="bienvenida-texto">
         <h1>Hey Hello!</h1>
@@ -211,7 +222,7 @@
 
     <section id="contacto">
       <h2>¿Listo para trabajar juntos?</h2>
-      <form action="#" method="POST">
+      <form action="#contacto" method="GET">
         <div class="contacto-wrapper">
           <div class="entrada">
             <label for="nombre" />

@@ -1,16 +1,17 @@
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('#menu');
+const burger = document.querySelector('#burger'); // era antes #menu
 let menuOpen = false;
-const opciones = document.querySelectorAll('#menu ul li');
+const opciones = document.querySelectorAll('#burger ul li');
 
 menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
     menuBtn.classList.add('open');
-    menu.classList.remove('active');
+    burger.classList.remove('active');
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
-    menu.classList.add('active');
+    burger.classList.add('active');
     menuOpen = false;
   }
 });
@@ -19,15 +20,15 @@ menuBtn.addEventListener('click', () => {
 for (const op of opciones) {
   op.addEventListener('click', () => {
     menuBtn.classList.remove('open');
-    menu.classList.add('active');
+    burger.classList.add('active');
     menuOpen = false;
   });
 }
 
 // TODO: Al clicar fuera del menú, debe cerrarse
-menu.addEventListener('mouseup', () => {
+burger.addEventListener('mouseup', () => {
   menuBtn.classList.remove('open');
-  menu.classList.add('active');
+  burger.classList.add('active');
   menuOpen = false;
 });
 

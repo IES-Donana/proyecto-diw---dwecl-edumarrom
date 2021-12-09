@@ -41,6 +41,7 @@
   font-family: sans-serif;
   padding: 10px 50px;
   cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 
 a {
@@ -54,8 +55,6 @@ a {
   border-radius: 10px;
   color: #272727;
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.5);
-  transition: all .2s ease-in-out;
-
 }
 
 .menu-btn {
@@ -114,4 +113,34 @@ a {
 
 .menu-btn.open .menu-btn_burger::after {
   transform: rotate(-45deg) translate(17.5px, 17.5px);
+}
+
+#menu {
+  height: 2vh;
+  margin: 0 4%;
+}
+
+#menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#menu ul li {
+  display: block;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+#menu ul li:hover {
+  background-color: rgba(218, 218, 218, 0.2);
+  margin: 5px 0;
+  border-radius: 10px;
+  color: #272727;
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.5);
+
 }

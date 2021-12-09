@@ -8,7 +8,7 @@ const mensaje = document.querySelector('#mensaje');
 
 nombre.addEventListener('change', validaNombre);
 email.addEventListener('change', validaEmail);
-asunto.addEventListener('change', validaAsunto);
+asunto.addEventListener('keyup', validaAsunto);
 mensaje.addEventListener('change', validaMensaje);
 
 // Crea el elemento que mostrará el error
@@ -38,7 +38,7 @@ function borrarError() {
 function validar(evento) {
   borrarError();
   if(validaNombre() && validaEmail() && validaAsunto() && validaMensaje()
-    && confirm("¿Confirmar envío de formulario?")) {
+    && confirm("¿Estás seguro?")) {
     return true;
   } else {
     evento.preventDefault();
