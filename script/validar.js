@@ -1,6 +1,16 @@
 const boton = document.getElementById('enviar');
 boton.addEventListener('click', validar);
 
+const nombre = document.querySelector('#nombre');
+const email = document.querySelector('#email');
+const asunto = document.querySelector('#asunto');
+const mensaje = document.querySelector('#mensaje');
+
+nombre.addEventListener('change', validaNombre);
+email.addEventListener('change', validaEmail);
+asunto.addEventListener('change', validaAsunto);
+mensaje.addEventListener('change', validaMensaje);
+
 // Crea el elemento que mostrará el error
 const mensajeError = document.createElement('div');
 mensajeError.classList.add('entrada-error-mensaje');
@@ -20,7 +30,6 @@ function error(e) {
 function borrarError() {
   const formulario = document.forms[0];
   for (const e of formulario.elements){
-    e.classList.remove('entrada-error');
     e.setCustomValidity('');  //Si no ponemos el mensaje en blanco, se determinará validación incorrecta
     mensajeError.textContent = e.validationMessage;
   }
@@ -52,6 +61,7 @@ function validaNombre() {
     return false;
   }
   console.log('Nombre correcto');
+  e.classList.remove('entrada-error');
   return true;
 }
 
@@ -70,6 +80,7 @@ function validaEmail() {
     return false;
   }
   console.log('Email correcto');
+  e.classList.remove('entrada-error');
   return true;
 }
 
@@ -88,6 +99,7 @@ function validaAsunto() {
     return false;
   }
   console.log('Asunto correcto');
+  e.classList.remove('entrada-error');
   return true;
 }
 
@@ -110,5 +122,6 @@ function validaMensaje() {
     return false;
   }
   console.log('Mensaje correcto');
+  e.classList.remove('entrada-error');
   return true;
 }

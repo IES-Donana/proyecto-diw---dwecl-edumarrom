@@ -131,8 +131,21 @@ h3+small {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
 }
 
+#contenedor-video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
 #testimonio-video {
-  align-self: center;
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  bottom: 0;
+  right: 12.5%;
+  width: 75%;
+  height: 75%;
 }
 
 #proyectos h2+p {
@@ -249,12 +262,28 @@ hr {
 }
 
 #real-fernando {
+  position: relative;
   padding-left: 20vw;
   background: url('/mmedia/images/real-fernando.jpg');
   background-size: 34%;
   background-position: 0;
   background-repeat: no-repeat;
 }
+
+/* No me convence el fondo de tarjeta. Problemático */
+/* #real-fernando::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('/mmedia/images/real-fernando.jpg');
+  background-position: center right -2vw;
+  background-repeat: no-repeat;
+  opacity: .2;
+} */
 
 #arvato {
   padding-left: 20vw;
@@ -273,7 +302,7 @@ hr {
 }
 
 #sobre {
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
 #sobre-wrapper {
@@ -367,18 +396,26 @@ hr {
 }
 
 input:focus,
-textarea:focus {
-  outline: 3px solid #7676a7;;
+textarea:focus,
+input:hover,
+textarea:hover {
+  outline: 3px solid #3b6ea5;;
+}
+
+button:focus,
+button:hover {
+outline: 3px solid rgba(59, 110, 165, .5);
 }
 
 .entrada-error:invalid {
-  outline: 2px solid #ff3333;
+  outline: 2px solid #a6723c;
+  background: rgba(166, 114, 60, .25);
 }
 
 .entrada-error-mensaje {
   margin-top: .5em;
   font-weight:bold ;
-  color: #ff3333;
+  color: #a6723c;
 }
 
 footer {
@@ -401,8 +438,16 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform .5s;
+}
+
+.social img:hover {
+  cursor: pointer;
+  transform: translateY(-5%);
+  transition: all 1s;
 }
 
 .social:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
