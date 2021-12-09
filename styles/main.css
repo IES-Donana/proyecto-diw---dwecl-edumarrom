@@ -173,7 +173,7 @@ h3+small {
   align-items: center;
 }
 
-#proyecto-imagen-cartas {
+#cartas {
   width: 18vw;
   height: 18vw;
   border-radius: 18vw;
@@ -184,9 +184,10 @@ h3+small {
   background-repeat: no-repeat;
   transform: rotate(-25deg);
   box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
+  transition: all .5s
 }
 
-#proyecto-imagen-notas {
+#notas {
   width: 18vw;
   height: 18vw;
   border-radius: 18vw;
@@ -197,9 +198,10 @@ h3+small {
   background-repeat: no-repeat;
   transform: rotate(-15deg);
   box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
+  transition: all .5s
 }
 
-#proyecto-imagen-dado {
+#dado {
   width: 18vw;
   height: 18vw;
   border-radius: 18vw;
@@ -210,6 +212,14 @@ h3+small {
   background-repeat: no-repeat;
   transform: rotate(-20deg);
   box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
+  transition: all .5s
+}
+
+#cartas:hover,
+#notas:hover,
+#dado:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 hr {
@@ -266,7 +276,7 @@ hr {
 
 #real-fernando {
   position: relative;
-  padding-left: 20vw;
+  padding-left: 20.5vw;
   background: url(/mmedia/images/real-fernando.jpg);
   background-size: 34%;
   background-position: 0;
@@ -289,7 +299,7 @@ hr {
 } */
 
 #arvato {
-  padding-left: 20vw;
+  padding-left: 20.5vw;
   background: url(/mmedia/images/arvato.png);
   background-size: 34%;
   background-position: 0;
@@ -297,7 +307,7 @@ hr {
 }
 
 #techmakers {
-  padding-left: 20vw;
+  padding-left: 20.5vw;
   background: url(/mmedia/images/techmakers.png);
   background-size: 34%;
   background-position: 0;
@@ -315,6 +325,7 @@ hr {
 }
 
 #sobre-texto {
+  padding-left: 5vw;
   width: 50%;
   font-size: larger;
 }
