@@ -16,7 +16,7 @@
 /* Visible o no */
 
 .active {
-  transform: translate(-600px);
+  transform: translate(-100vw);
 }
 
 /* Elementos del menú */
@@ -53,7 +53,6 @@ a {
 
 .menu-btn {
   z-index: 10;
-
   position: fixed;
   display: flex;
   justify-content: center;
@@ -62,6 +61,10 @@ a {
   height: 40px;
   cursor: pointer;
   transition: all .5s ease-in-out;
+}
+
+.oculto {
+  visibility: hidden;
 }
 
 /* Línea central */

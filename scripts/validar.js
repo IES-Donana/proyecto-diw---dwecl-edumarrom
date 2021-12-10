@@ -36,7 +36,7 @@ const toolong = (e) => `El ${e.name} no puede superar los ${e.minLength} caracte
 function error(e) {
   mensajeError.textContent = e.validationMessage;
   e.classList.add('entrada-error');
-  e.insertAdjacentElement("afterend", mensajeError);
+  e.insertAdjacentElement('afterend', mensajeError);
 }
 
 function borrarError() {
@@ -50,7 +50,7 @@ function borrarError() {
 function validar(evento) {
   borrarError();
   if(validaNombre() && validaEmail() && validaAsunto() && validaMensaje()
-    && confirm("¿Estás seguro?")) {
+    && confirm('¿Estás seguro?')) {
     return true;
   } else {
     evento.preventDefault();
