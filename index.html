@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/main.css">
   <link rel="stylesheet" href="/styles/menu.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <script defer src="/scripts/menu.js"></script>
   <script defer src="/scripts/validar.js"></script>
   <title>Eduardo Martínez - PortFolio</title>
 </head>
-<body>
+<body class="bg-gray-100">
   <div class="menu-btn">
     <div class="menu-btn_burger"></div>
   </div>
@@ -37,9 +38,9 @@
         </ul>
       </nav>
     </header>
-    <section id="bienvenida" class="tarjeta bienvenida">
+    <section id="bienvenida" class="mx-12 my-8 bg-gray-50 rounded-3xl shadow-2xl" >
       <div id="bienvenida-texto">
-        <h1>Hey Hello!</h1>
+        <h1 class="pt-60 text-8xl">Hey Hello!</h1>
         <p>
           Me llamo Edu y soy estudiante en el Desarrollo
           de Aplicaciones Web.
@@ -49,48 +50,48 @@
       <div id="bienvenida-imagen"></div>
     </section>
 
-    <section class="tarjeta testimonio">
-      <div>
+    <section class="mx-12 my-8 bg-gray-50 rounded-3xl shadow-2xl testimonio">
+      <div class="px-8">
         <p>
           <q>Con Eduardo, un buen genio entró en mi oficina.</q>
           <cite>—Diógenes de Sinope</cite>
         </p>
       </div>
 
-      <div class="testimonio-autor">
+      <div class="testimonio-autor pb-4">
         <div id="testimonio-img"></div>
         <p><small>Fundador de la escuela online Cynism.cx</small></p>
       </div>
     </section>
 
-    <div class="tarjeta">
+    <div class="mx-12 my-8 bg-gray-50 rounded-3xl shadow-2xl">
       <section id="proyectos">
         <div>
-          <h2>Bueno...<br>¿y cómo es mi trabajo?</h2>
-          <p>Pues para muestra un botón (o varios)</p>
+          <h2 class="text-6xl">Bueno...<br>¿y cómo es mi trabajo?</h2>
+          <p class="m-15 p-10">Pues para muestra un botón (o varios)</p>
         </div>
 
         <div class="proyecto-wrapper">
           <div class="proyecto">
             <div class="proyecto-cabecera">
-              <h3>Rentoy</h3>
-              <small>Juego de naipes</small>
+              <h3 class="pb-8 text-5xl">Rentoy</h3>
+              <small class="pt-3">Juego de naipes</small>
               <div id="cartas" class="proyecto-imagen"></div>
             </div>
-            <p>
+            <p class="pt-5">
               Desde que comencé a estudiar programación me preguntaba como
               sería desarrollar el juego del Rentoy. Ahora lo sé, y es
               un triunfo. <q>¡Envío!</q>
             </p>
           </div>
 
-          <div class="proyecto">
+          <div class="proyecto mb-16">
             <div class="proyecto-cabecera">
-              <h3>Recordor</h3>
-              <small>Notas y tareas</small>
+              <h3 class="pb-8 text-5xl">Recordor</h3>
+              <small class="pt-3">Notas y tareas</small>
               <div id="notas" class="proyecto-imagen"></div>
             </div>
-            <p>
+            <p class="pt-5">
               Nadie se entiende mejor que uno mismo cuando se trata de
               organizar nuestras ideas. ¿Por qué no hacer entonces tu
               propia App de notas?
@@ -99,11 +100,11 @@
 
           <div class="proyecto">
             <div class="proyecto-cabecera">
-              <h3>Chō-han</h3>
-              <small>Juego de dados</small>
+              <h3 class="pb-8 text-5xl">Chō-han</h3>
+              <small class="pt-3">Juego de dados</small>
               <div id="dado" class="proyecto-imagen"></div>
             </div>
-            <p>
+            <p class="pt-5">
               Todo empezó por curiosear como implementar un dado.
               Del dado pasé a un cubilete, y cuando quise darme cuenta
               tenía un clásico juego nipón.
@@ -116,7 +117,7 @@
 
       <section id="cv">
         <div id="cv-cabecera">
-          <h2>¿Y dónde he estado todo este tiempo?</h2>
+          <h2 class="pt-10 mb-20 text-6xl">¿Y dónde he estado todo este tiempo?</h2>
         </div>
 
         <div id="cv-wrapper">
@@ -131,9 +132,9 @@
           <div id="experiencia-wrapper">
             <div class="experiencia">
               <div class="experiencia-cabecera">
-                <h3>Cristóbal Anillo</h3>
+                <h3 class="pb-8 text-5xl">Cristóbal Anillo</h3>
               </div>
-              <div id="real-fernando" class="tarjeta experiencia-imagen" >
+              <div class="pt-4 pb-4 pr-3 mx-12 my-8 bg-gray-50 rounded-3xl shadow-2xl experiencia-imagen" id="real-fernando">
                 <p>
                   La vida da muchas vueltas... y darlas en barco es mucho mejor.
                   Realizábamos visitas al P.N. Doñana en un recorrido fluvial
@@ -144,9 +145,9 @@
 
             <div class="experiencia">
               <div class="experiencia-cabecera">
-                <h3>Arvato - Bertelsmann</h3>
+                <h3 class="pb-8 text-5xl">Arvato - Bertelsmann</h3>
               </div>
-              <div class="tarjeta experiencia-imagen" id="arvato">
+              <div class="pt-4 pb-4 pr-3 mx-12 my-8 bg-gray-50 rounded-3xl shadow-2xl experiencia-imagen" id="arvato">
                 <p>
                   Participé en un proyecto de CRM donde gestionaba una cartera de
                   clientes particulares, a los que asesoraba tanto a nivel
@@ -157,9 +158,9 @@
 
             <div class="experiencia">
               <div class="experiencia-cabecera">
-                <h3>Techmakers</h3>
+                <h3 class="pb-8 text-5xl">Techmakers</h3>
               </div>
-              <div class="tarjeta experiencia-imagen" id="techmakers">
+              <div class="pt-4 pb-4 pr-3 mx-12 my-8 bg-gray-50 rounded-3xl shadow-2xl experiencia-imagen" id="techmakers">
                 <p>
                   Siempre me ha llamado el mundo de la docencia, y aquí tuve la
                   oportunidad de impartir cursos de STEM a grupos escolares,
@@ -172,9 +173,9 @@
       </section>
     </div>
 
-    <section id="sobre" class="tarjeta guitarra">
+    <section id="sobre" class="mx-12 my-8 bg-gray-50 rounded-3xl shadow-2xl guitarra">
       <div id="sobre-wrapper">
-        <div id="sobre-texto">
+        <div id="sobre-texto" class="pb-6">
           <p id="sobre-cabecera">¿Y qué más hago aparte de trabajar?</p>
           <p>
             Hay muchas cosas de las que podría hablar. Una de mis aficiones es la
@@ -203,15 +204,15 @@
       </div>
     </section>
 
-    <section class="tarjeta testimonio">
-      <div>
+    <section class="mx-12 my-8 bg-gray-50 rounded-3xl shadow-2xl testimonio">
+      <div class="px-8">
         <p>
           <q>Me gusta trabajar con Eduardo. Hace cosas.</q>
           <cite>—Señor Aleatorio</cite>
         </p>
       </div>
 
-      <div class="testimonio-autor">
+      <div class="testimonio-autor pb-4">
         <div id="contenedor-video">
           <iframe id="testimonio-video" src="https://www.youtube.com/embed/NDe13n_WpQA"
             title="YouTube video player" allow="accelerometer; autoplay;
@@ -223,35 +224,35 @@
     </section>
 
     <section id="contacto">
-      <h2>¿Listo para trabajar juntos?</h2>
+      <h2 class="text-6xl">¿Listo para trabajar juntos?</h2>
       <form action="#contacto" method="GET">
         <div class="contacto-wrapper">
-          <div class="entrada">
+          <div class="entrada bg-white">
             <label for="nombre"></label>
             <input type="text" name="nombre" id="nombre"
               required pattern="^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s]{2,44}"
               maxlength="45" placeholder="Tu nombre">
           </div>
 
-          <div class="entrada">
+          <div class="entrada bg-white">
             <label for="email"></label>
             <input type="email" name="email" id="email"
               required pattern="^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$"
               maxlength="255" placeholder="Tu email">
           </div>
 
-          <div class="entrada">
+          <div class="entrada bg-white">
             <label for="asunto"></label>
             <input type="text" name="asunto" id="asunto"
               required pattern="^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9\s]{4,120}" placeholder="Asunto">
           </div>
 
-          <div class="entrada">
+          <div class="entrada bg-white">
             <label for="mensaje"></label>
             <textarea name="mensaje" id="mensaje"
               required minlength="10" maxlength="500" placeholder="Hey hello..." disabled></textarea>
           </div>
-          <div class="entrada">
+          <div class="entrada bg-white">
             <button type="submit" id="enviar">¡Vamos allá!</button>
           </div>
         </div>
@@ -259,7 +260,7 @@
     </section>
 
     <footer>
-      <h4>Si me necesitas, ya sabes donde estoy</h4>
+      <h4 class="pt-4 pb-6 text-4xl">Si me necesitas, ya sabes donde estoy</h4>
       <div class="social-wrapper">
         <div class="social">
           <img src="/mmedia/icons/whatsapp.png" width="50" alt="Teléfono">

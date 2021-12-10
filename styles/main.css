@@ -76,7 +76,7 @@ h3+small {
   z-index: 1;
 }
 
-#bienvenida-imagen::before {
+/* #bienvenida-imagen::before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -90,7 +90,7 @@ h3+small {
   background-repeat: no-repeat;
   opacity: .6;
   filter: grayscale(1);
-}
+} */
 
 /* Testimonio 1 */
 
