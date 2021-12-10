@@ -26,10 +26,17 @@ for (const op of opciones) {
 }
 
 // TODO: Al clicar fuera del menú, debe cerrarse
-burger.addEventListener('mouseup', () => {
+document.body.addEventListener('mouseup', () => {
   menuBtn.classList.remove('open');
   burger.classList.add('active');
   menuOpen = false;
+});
+
+
+$.each( $('*'), function() {
+  if( $(this).width() > $('body').width()) {
+  console.log("Wide Element: ", $(this), "Width: ", $(this).width());
+  }
 });
 
 // TODO: El menu hamburguesa debe permanecer oculto hasta pasar la tarjeta de bienvenida

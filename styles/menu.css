@@ -58,7 +58,6 @@ a {
 }
 
 .menu-btn {
-  /* margin: 40px 50px; */
   z-index: 10;
 
   position: fixed;
@@ -142,5 +141,10 @@ a {
   border-radius: 10px;
   color: #272727;
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.5);
+}
 
+@media only screen and (max-width: 768px) {
+  #menu {
+    visibility: hidden;
+  }
 }
