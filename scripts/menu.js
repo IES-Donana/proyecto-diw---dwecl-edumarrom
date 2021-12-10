@@ -32,11 +32,4 @@ document.body.addEventListener('mouseup', () => {
   menuOpen = false;
 });
 
-
-$.each( $('*'), function() {
-  if( $(this).width() > $('body').width()) {
-  console.log("Wide Element: ", $(this), "Width: ", $(this).width());
-  }
-});
-
 // TODO: El menu hamburguesa debe permanecer oculto hasta pasar la tarjeta de bienvenida

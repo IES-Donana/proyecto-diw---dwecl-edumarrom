@@ -18,11 +18,11 @@
   <!-- burger era antes menu -->
   <nav id ="burger" class="menu-container active">
     <ul>
-      <a href="#inicio"><li>Bienvenida</li></a>
-      <a href="#proyectos"><li>Proyectos</li></a>
-      <a href="#cv"><li>Experiencia</li></a>
-      <a href="#sobre"><li>Sobre mí</li></a>
-      <a href="#contacto"><li>Contacto</li></a>
+      <li><a href="#inicio">Bienvenida</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#cv">Experiencia</a></li>
+      <li><a href="#sobre">Sobre mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
 
@@ -30,10 +30,10 @@
     <header>
       <nav id ="menu">
         <ul>
-          <a href="#proyectos"><li>Proyectos</li></a>
-          <a href="#cv"><li>Experiencia</li></a>
-          <a href="#sobre"><li>Sobre mí</li></a>
-          <a href="#contacto"><li>Contacto</li></a>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#cv">Experiencia</a></li>
+          <li><a href="#sobre">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -57,7 +57,7 @@
         </p>
       </div>
 
-      <div id="testimonio-autor">
+      <div class="testimonio-autor">
         <div id="testimonio-img"></div>
         <p><small>Fundador de la escuela online Cynism.cx</small></p>
       </div>
@@ -211,10 +211,10 @@
         </p>
       </div>
 
-      <div id="testimonio-autor">
+      <div class="testimonio-autor">
         <div id="contenedor-video">
           <iframe id="testimonio-video" src="https://www.youtube.com/embed/NDe13n_WpQA"
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+            title="YouTube video player" allow="accelerometer; autoplay;
             clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
           </iframe>
         </div>
@@ -227,29 +227,29 @@
       <form action="#contacto" method="GET">
         <div class="contacto-wrapper">
           <div class="entrada">
-            <label for="nombre" />
+            <label for="nombre"></label>
             <input type="text" name="nombre" id="nombre"
               required pattern="^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s]{2,44}"
               maxlength="45" placeholder="Tu nombre">
           </div>
 
           <div class="entrada">
-            <label for="email" />
+            <label for="email"></label>
             <input type="email" name="email" id="email"
               required pattern="^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$"
               maxlength="255" placeholder="Tu email">
           </div>
 
           <div class="entrada">
-            <label for="asunto" />
+            <label for="asunto"></label>
             <input type="text" name="asunto" id="asunto"
               required pattern="^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9\s]{4,120}" placeholder="Asunto">
           </div>
 
           <div class="entrada">
-            <label for="mensaje" />
+            <label for="mensaje"></label>
             <textarea name="mensaje" id="mensaje"
-              required minlength="10" maxlength="500" placeholder="Hey hello..."></textarea>
+              required minlength="10" maxlength="500" placeholder="Hey hello..." disabled></textarea>
           </div>
           <div class="entrada">
             <button type="submit" id="enviar">¡Vamos allá!</button>
@@ -262,19 +262,19 @@
       <h4>Si me necesitas, ya sabes donde estoy</h4>
       <div class="social-wrapper">
         <div class="social">
-          <img src="/mmedia/icons/whatsapp.png" width="50px" alt="Teléfono">
+          <img src="/mmedia/icons/whatsapp.png" width="50" alt="Teléfono">
           <small>+34 666 66 66 66</small>
         </div>
         <div class="social">
-          <img src="/mmedia/icons/linkedin.png" width="50px" alt="Enlace a mi LikedIn">
+          <img src="/mmedia/icons/linkedin.png" width="50" alt="Enlace a mi LikedIn">
           <small>LinkedIn</small>
         </div>
         <div class="social">
-          <img src="/mmedia/icons/github.png" width="50px" alt="Enlace a mi GitHub">
+          <img src="/mmedia/icons/github.png" width="50" alt="Enlace a mi GitHub">
           <small>GitHub</small>
         </div>
         <div class="social">
-          <img src="/mmedia/icons/reddit.png" width="50px" alt="Enlace a mi Reddit">
+          <img src="/mmedia/icons/reddit.png" width="50" alt="Enlace a mi Reddit">
           <small>Reddit</small>
         </div>
       </div>

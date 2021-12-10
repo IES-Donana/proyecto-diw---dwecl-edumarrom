@@ -27,7 +27,23 @@ He continuado llevando la organización de los ficheros de una forma similar a c
 La carpeta `mmedia` actua de índice para todo el contenido multimedia utilizado para la codificación del proyecto. En ella encontraremos las imágenes y la iconografía que encontraremos en el documento web.
 
 ### 1.4. Respecto al diseño responsivo...
-Este será el apartado que más va a flojear de toda esta entrega. Mi mala organización me ha llevado a trabajar contrareloj y si quería que la versión de escritorio estuviese lista tenía que dedicar todo el tiempo a ella. Me hubiese gustado poder dedicarle su tiempo, darle sus vueltas y aprender realmente a manejarme con los puntos de ruptura, pero no ha podido ser así.
+Al principio pensé que este sería el apartado más flojo de toda la entrega, y no es que sea de los mejores, pero ha sido relativamente fácil acomodar todos los elementos para dispositivos con pantallas más pequeñas. Gracias a la extensión Live Server de VS Code he podido ver mi página tanto en mi móvil como en mi tablet, y en ambos escenarios se ve bastante bien.
+
+### 1.5 Validación de los ficheros HTML y CSS
+Después de codificar todo el proyectpo y quedar satisfecho con el resultado realicé la validación de los documentos.
+
+#### HTML
+Tras la primera comprobación, me alegró ver que sólo había un par de errores:
+- Inserte un elemento `<li>` dentro de un elemento `<a>` cuando debía ser al contrario.
+- Dupliqué por error el nombre del id `testimonio-autor`. Lo resolví convirtiéndolo en una clase, que reutilizo para los dos testimonios del portfolio.
+- Usaba el atributo `frameborder` en el elemento `<iframe>` que contiene el vídeo. Ahora es una propiedad CSS.
+- Usé cierre abreviado en las etiquetas `<label>`. Aunque estén vacíos, no permite cerrarse usando sólo `/` al final de la etiqueta de apertura.
+
+Todos estos errores han sido corregidos.
+> Hay una serie de advertencias por no usar cabeceras como primer elemento hijo de un elemento `<section>`. Técnicamente es cierto, el primer hijo es un `<div>` que si contiene la cabecera. No he realizado mosdificaciones.
+### CSS
+El CSS fue incluso más fácil de validar. Tan sólo había errores (o advertencias, no recuerdo) debido a que usaba el método `grayscale` con argumento vacío, cuando es obligatorio especificarle un valor(i.e: `grayscale(1)`). Por último, en el elemento `textarea` tenía aplicada la propiedad `border` con el mismo color que el `background`. Esto estaba así porque por defecto textarea tiene borde. Lo he resuelto dandole el valor `0`.
+
 ## 2. Prototipo<a id="prototipo"></a>
 Para revisar como es mi prototipo dejo aquí el [enlace al prototipo en Figma.](https://www.figma.com/file/Jx8TdgBvmOWf6QPgR7NAmA/portfolio)
 

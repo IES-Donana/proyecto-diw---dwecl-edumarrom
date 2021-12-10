@@ -1,15 +1,27 @@
+const form = document.forms[0];
 const boton = document.getElementById('enviar');
-boton.addEventListener('click', validar);
 
 const nombre = document.querySelector('#nombre');
 const email = document.querySelector('#email');
 const asunto = document.querySelector('#asunto');
 const mensaje = document.querySelector('#mensaje');
 
+boton.addEventListener('click', validar);
+form.addEventListener('change', activaMensaje);
+
 nombre.addEventListener('change', validaNombre);
 email.addEventListener('change', validaEmail);
 asunto.addEventListener('keyup', validaAsunto);
 mensaje.addEventListener('change', validaMensaje);
+
+function activaMensaje() {
+  const e = document.querySelector('#mensaje');
+  if(nombre.checkValidity() && email.checkValidity() && asunto.checkValidity()) {
+    e.disabled = false;
+    return true;
+  }
+  return false;
+}
 
 // Crea el elemento que mostrará el error
 const mensajeError = document.createElement('div');

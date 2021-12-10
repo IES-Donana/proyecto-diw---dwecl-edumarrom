@@ -40,15 +40,15 @@ h3+small {
 }
 
 .tarjeta {
-  margin: 6%;
-  padding: 1%;
+  margin: 6vh;
+  padding: 3vh;
   background: rgba(218, 218, 218, .2);
   border-radius: 20px;
   box-shadow: 8px 8px 14px 8px rgba(0, 0, 0, .25);
 }
 
 #bienvenida {
-  height: auto;
+  margin-top: 8vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -56,6 +56,11 @@ h3+small {
 
 #bienvenida-texto {
   width: 50%;
+}
+
+#bienvenida p {
+  font-size: 3em;
+  font-weight: normal;
 }
 
 #bienvenida-imagen {
@@ -81,7 +86,7 @@ h3+small {
   background-position: right 0 bottom 90%;
   background-repeat: no-repeat;
   opacity: .6;
-  filter: grayscale();
+  filter: grayscale(1);
 }
 
 /* .bienvenida::before {
@@ -99,11 +104,6 @@ h3+small {
   opacity: .6;
   filter: grayscale();
 } */
-
-#bienvenida p {
-  font-size: 3em;
-  font-weight: normal;
-}
 
 .testimonio p {
   font-size: 2em;
@@ -124,7 +124,7 @@ h3+small {
   text-align: right;
 }
 
-#testimonio-autor {
+.testimonio-autor {
   display: flex;
   flex-direction: column;
   justify-content: right;
@@ -159,10 +159,11 @@ h3+small {
   right: 12.5%;
   width: 75%;
   height: 75%;
+  border: 0;
 }
 
 #proyectos h2+p {
-  margin-top: -25px;
+  margin-top: -4vh;
   font-size: 1.5em;
   text-align: center;
 }
@@ -228,8 +229,10 @@ hr {
   box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, .25);
 }
 
+/* CV Cronológico */
+
 #cv-cabecera {
-  margin-bottom: -5%;
+  margin-bottom: -4vh;
 }
 
 #cv-wrapper {
@@ -239,20 +242,15 @@ hr {
 }
 
 #fechas {
+  margin-left: 3vw;
   display: flex;
   flex-direction: column;
-  font-size: large;
-  font-weight: bold;
+  font-size: xx-large;
   justify-content: space-around;
 }
 
-#fechas p{
-  font-size: x-large;
-  font-weight: normal;
-}
-
 #linea-temporal {
-  width: 40vw;
+  width: 12vw;
 }
 
 .experiencia-wrapper {
@@ -261,8 +259,8 @@ hr {
 }
 
 .experiencia-cabecera {
-  margin-left: 4%;
-  margin-bottom: -4%;
+  margin-left: 4vw;
+  margin-bottom: -4vh;
 }
 
 .experiencia {
@@ -313,6 +311,8 @@ hr {
   background-repeat: no-repeat;
 }
 
+/* Sobre mí */
+
 #sobre {
   min-height: 75vh;
 }
@@ -361,6 +361,8 @@ hr {
   opacity: .2;
 }
 
+/* Contacto */
+
 .contacto-wrapper {
   margin: 4%;
   padding: 1%;
@@ -391,7 +393,7 @@ hr {
   font-family: sans-serif;
   font-size: 1.2em;
   background: rgba(218, 218, 218, 0.2);
-  border: 2px rgba(218, 218, 218, 0.2);
+  border: 0;
   border-radius: 10px;
   box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, .5);
 }
@@ -464,8 +466,191 @@ footer {
   transform: scale(1.1);
 }
 
-@media only screen and (min-width: 768px) {
+/* Dispositivos móviles y tablets */
+@media only screen and (max-width: 768px) {
   .tarjeta {
-    margin: 4%;
+    margin: 4vh 2vh;
+  }
+
+  h1 {
+    margin-top: 1.5em;
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 2em;
+    font-weight: normal;
+  }
+
+  h4 {
+    margin-top: .5em;
+    font-size: 2em;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  small {
+    font-size:x-small;
+  }
+
+/* Bienvenida */
+
+  #bienvenida {
+    justify-content: space-around;
+  }
+
+  #bienvenida h1 {
+    margin-top: .5em;
+    font-size: 5em;
+  }
+
+  #bienvenida p {
+    font-size: 2em;
+    font-weight: normal;
+  }
+
+  #bienvenida-texto {
+    margin: 0 -10vw ;
+  }
+
+  #bienvenida-imagen {
+    width: auto;
+  }
+
+  .bienvenida {
+    min-height:auto;
+  }
+
+  #bienvenida-imagen::before {
+    background-size: 60%;
+    background-position: right bottom ;
+    background-repeat: no-repeat;
+    opacity: .6;
+    filter: grayscale(1);
+  }
+
+  /* Testimonios */
+
+  .testimonio p {
+    font-size: 1.25em;
+  }
+
+  /* Proyectos */
+
+  #proyectos h2+p {
+    font-size: 1em;
+  }
+
+  .proyecto-wrapper {
+    flex-direction: column;
+    padding: 0 4vw;
+  }
+
+  .proyecto {
+    width: auto;
+  }
+
+  #proyectos h3+small {
+    margin-top: -4vh;
+    margin-bottom: 4.5vh;
+  }
+
+  .proyecto-imagen {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 40vw;
+  }
+
+  /* CV Cronológico*/
+
+  #fechas {
+    font-size: x-large;
+  }
+
+  #linea-temporal {
+    width: 40vw;
+  }
+
+  .experiencia-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experiencia-cabecera {
+    margin-left: 4vw;
+    margin-bottom: -4vh;
+  }
+
+  .experiencia {
+    font-size: large;
+  }
+
+  .experiencia p {
+    font-size: large;
+  }
+
+  #real-fernando {
+    padding: 0 2vw 0 20.5vw;
+  }
+
+  #arvato {
+    padding: 0 2vw 0 20.5vw;
+  }
+
+  #techmakers {
+    padding: 0 2vw 0 20.5vw;
+  }
+
+  /* Sobre mí */
+
+  #sobre {
+    min-height:auto;
+  }
+
+  #sobre-wrapper {
+    flex-direction: column;
+  }
+
+  #sobre-texto {
+    padding: 0 5vw;
+    width: auto;
+    font-size: large;
+  }
+
+  #sobre-cabecera {
+    font-size: 2em;
+  }
+
+  #sobre-imagen {
+    width: auto;
+  }
+
+  .guitarra {
+    position: relative;
+    z-index: 1;
+  }
+
+  .guitarra::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(/mmedia/images/paco-castillo.png);
+    background-position: left -100vw bottom -35vh;
+    background-repeat: no-repeat;
+    opacity: .1;
+  }
+
+  .social-wrapper {
+    margin: 0 5vw;
   }
 }
