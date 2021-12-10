@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
+/* Elementos básicos */
 body {
   background: #fff;
   font-family: 'Roboto', sans-serif;
@@ -34,6 +34,7 @@ h3+small {
   margin-bottom: 30px;
 }
 
+/* Estucturas básicas */
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -46,6 +47,8 @@ h3+small {
   border-radius: 20px;
   box-shadow: 8px 8px 14px 8px rgba(0, 0, 0, .25);
 }
+
+/* Bienvenida */
 
 #bienvenida {
   margin-top: 8vh;
@@ -89,21 +92,7 @@ h3+small {
   filter: grayscale(1);
 }
 
-/* .bienvenida::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: url('/mmedia/images/yo.jpg');
-  background-size: 60%;
-  background-position: right 0% bottom 90%;
-  background-repeat: no-repeat;
-  opacity: .6;
-  filter: grayscale();
-} */
+/* Testimonio 1 */
 
 .testimonio p {
   font-size: 2em;
@@ -144,6 +133,8 @@ h3+small {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
 }
 
+/* Testimonio 2 */
+
 #contenedor-video {
   position: relative;
   overflow: hidden;
@@ -161,6 +152,8 @@ h3+small {
   height: 75%;
   border: 0;
 }
+
+/* Proyectos */
 
 #proyectos h2+p {
   margin-top: -4vh;
@@ -271,10 +264,29 @@ hr {
   font-size: larger;
 }
 
-#real-fernando {
+.experiencia-imagen {
+  padding-left: 22.5vw;
   position: relative;
-  padding-left: 20.5vw;
+}
+
+#real-fernando {
+
   background: url(/mmedia/images/real-fernando.jpg);
+  background-size: 34%;
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+#arvato {
+  background: url(/mmedia/images/arvato.png);
+  background-size: 34%;
+  background-position: 0;
+  background-repeat: no-repeat;
+}
+
+#techmakers {
+  background: url(/mmedia/images/techmakers.png);
   background-size: 34%;
   background-position: 0;
   background-repeat: no-repeat;
@@ -294,22 +306,6 @@ hr {
   background-repeat: no-repeat;
   opacity: .2;
 } */
-
-#arvato {
-  padding-left: 20.5vw;
-  background: url(/mmedia/images/arvato.png);
-  background-size: 34%;
-  background-position: 0;
-  background-repeat: no-repeat;
-}
-
-#techmakers {
-  padding-left: 20.5vw;
-  background: url(/mmedia/images/techmakers.png);
-  background-size: 34%;
-  background-position: 0;
-  background-repeat: no-repeat;
-}
 
 /* Sobre mí */
 
@@ -433,6 +429,8 @@ outline: 3px solid rgba(59, 110, 165, .5);
   color: #a5723b;
 }
 
+/* Recursos sociales */
+
 footer {
   padding-top: .5em;
   bottom: 0;
@@ -468,9 +466,8 @@ footer {
 
 /* Dispositivos móviles y tablets */
 @media only screen and (max-width: 768px) {
-  .tarjeta {
-    margin: 4vh 2vh;
-  }
+
+  /* Elementos básicos */
 
   h1 {
     margin-top: 1.5em;
@@ -499,7 +496,13 @@ footer {
     font-size:x-small;
   }
 
-/* Bienvenida */
+  /* Estructuras básicas */
+
+  .tarjeta {
+    margin: 4vh 2vh;
+  }
+
+  /* Bienvenida */
 
   #bienvenida {
     justify-content: space-around;
@@ -567,7 +570,7 @@ footer {
     border-radius: 40vw;
   }
 
-  /* CV Cronológico*/
+  /* CV Cronológico */
 
   #fechas {
     font-size: x-large;
@@ -595,14 +598,8 @@ footer {
     font-size: large;
   }
 
-  #real-fernando {
-    padding: 0 2vw 0 20.5vw;
-  }
-
-  #arvato {
-    padding: 0 2vw 0 20.5vw;
-  }
-
+  #real-fernando,
+  #arvato,
   #techmakers {
     padding: 0 2vw 0 20.5vw;
   }
@@ -649,6 +646,8 @@ footer {
     background-repeat: no-repeat;
     opacity: .1;
   }
+
+  /* Recursos sociales */
 
   .social-wrapper {
     margin: 0 5vw;

@@ -1,3 +1,5 @@
+/* Menu desplegable */
+
 .menu-container {
   background-color: #fefefe;
   box-shadow: 2px 0 5px 2px #666;
@@ -11,23 +13,13 @@
   transition: all .5s ease-in-out;
 }
 
-/* .menu-container::before {
-  content: '';
-  background-color: #fefefe;
-  box-shadow: 2px 0 5px 2px #666;
-  width: 250px;
-  height: 100vh;
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  filter: blur(2.5rem);
-  transition: all .5s ease-out;
-} */
+/* Visible o no */
 
 .active {
   transform: translate(-600px);
 }
+
+/* Elementos del menú */
 
 .menu-container ul {
   padding: 100px 5px 20px 5px;
@@ -57,6 +49,8 @@ a {
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* Botón de menú (Tipo Burger) */
+
 .menu-btn {
   z-index: 10;
 
@@ -70,6 +64,8 @@ a {
   transition: all .5s ease-in-out;
 }
 
+/* Línea central */
+
 .menu-btn_burger {
   width: 25px;
   height: 3px;
@@ -79,6 +75,8 @@ a {
   transition: all .5s ease-in-out;
 
 }
+
+/* Lías superior e inferior */
 
 .menu-btn_burger::before,
 .menu-btn_burger::after {
@@ -91,6 +89,8 @@ a {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
   transition: all .5s ease-in-out;
 }
+
+/* Animación al abrir/cerrar */
 
 .menu-btn_burger::before {
   transform: translateY(-8px);
@@ -113,6 +113,8 @@ a {
 .menu-btn.open .menu-btn_burger::after {
   transform: rotate(-45deg) translate(17.5px, 17.5px);
 }
+
+/* Menú fijo en cabecera. Visible sólo en versión escritorio*/
 
 #menu {
   height: 2vh;
@@ -143,6 +145,7 @@ a {
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* Dispositivos móviles y tablets */
 @media only screen and (max-width: 768px) {
   #menu {
     display: none;
