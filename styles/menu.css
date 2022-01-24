@@ -1,0 +1,156 @@
+/* Menu desplegable */
+
+.menu-container {
+  background-color: #fefefe;
+  box-shadow: 2px 0 5px 2px #666;
+  min-width: 20vw;
+  height: 100vh;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: all .5s ease-in-out;
+}
+
+/* Visible o no */
+
+.active {
+  transform: translate(-100vw);
+}
+
+/* Elementos del menú */
+
+.menu-container ul {
+  padding: 100px 5px 20px 5px;
+  list-style: none;
+}
+
+.menu-container ul li {
+  color: #272727;
+  display: block;
+  font-size: 25px;
+  font-family: sans-serif;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+a {
+  color: #272727;
+  text-decoration: none;
+}
+
+.menu-container ul li:hover {
+  background-color: rgba(218, 218, 218, 0.2);
+  margin: 15px 0;
+  border-radius: 10px;
+  color: #272727;
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón de menú (Tipo Burger) */
+
+.menu-btn {
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.oculto {
+  visibility: hidden;
+}
+
+/* Línea central */
+
+.menu-btn_burger {
+  width: 25px;
+  height: 3px;
+  background: #272727;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+  transition: all .5s ease-in-out;
+
+}
+
+/* Lías superior e inferior */
+
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: #272727;
+  border-radius: 2.5px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+  transition: all .5s ease-in-out;
+}
+
+/* Animación al abrir/cerrar */
+
+.menu-btn_burger::before {
+  transform: translateY(-8px);
+}
+
+.menu-btn_burger::after {
+  transform: translateY(8px);
+}
+
+.menu-btn.open .menu-btn_burger {
+  transform: translatex(-25px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg) translate(17.5px, -17.5px);
+}
+
+.menu-btn.open .menu-btn_burger::after {
+  transform: rotate(-45deg) translate(17.5px, 17.5px);
+}
+
+/* Menú fijo en cabecera. Visible sólo en versión escritorio*/
+
+#menu {
+  height: 2vh;
+  margin: 0 4%;
+}
+
+#menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#menu ul li {
+  display: block;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+#menu ul li:hover {
+  background-color: rgba(218, 218, 218, 0.2);
+  margin: 5px 0;
+  border-radius: 10px;
+  color: #272727;
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Dispositivos móviles y tablets */
+@media only screen and (max-width: 768px) {
+  #menu {
+    display: none;
+  }
+}

@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Elementos básicos */
+body {
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin-top: 2em;
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3.75em;
+  font-weight: normal;
+  text-align: center;
+}
+
+h3 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+h4 {
+  margin-top: .5em;
+  font-size: 2em;
+  font-weight: normal;
+  text-align: center;
+}
+
+h3+small {
+  margin-top: -45px;
+  margin-bottom: 30px;
+}
+
+/* Estucturas básicas */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta {
+  margin: 6vh;
+  padding: 3vh;
+  background: rgba(218, 218, 218, .2);
+  border-radius: 20px;
+  box-shadow: 8px 8px 14px 8px rgba(0, 0, 0, .25);
+}
+
+/* Bienvenida */
+
+#bienvenida {
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#bienvenida-texto {
+  width: 50%;
+}
+
+#bienvenida p {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+#bienvenida-imagen {
+  width: 50%;
+}
+
+.bienvenida {
+  min-height: 90vh;
+  position: relative;
+  z-index: 1;
+}
+
+#bienvenida-imagen::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(/mmedia/images/yo.jpg);
+  background-size: 60%;
+  background-position: right 0 bottom 90%;
+  background-repeat: no-repeat;
+  opacity: .6;
+  filter: grayscale(1);
+}
+
+/* Testimonio 1 */
+
+.testimonio p {
+  font-size: 2em;
+}
+
+.testimonio q {
+  display: block;
+  font-size: 2em;
+}
+
+.testimonio cite {
+  display: block;
+  margin: 2% 0 0 2%;
+}
+
+.testimonio div:last-of-type {
+  font-size: 0.75em;
+  text-align: right;
+}
+
+.testimonio-autor {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+  margin-right: 25px;
+}
+
+#testimonio-img {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 30vw;
+  background: url(/mmedia/images/diogenes.jpg);
+  background-size: 140% 200%;
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  transform: rotate(5deg);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
+}
+
+/* Testimonio 2 */
+
+#contenedor-video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+#testimonio-video {
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  bottom: 0;
+  right: 12.5%;
+  width: 75%;
+  height: 75%;
+  border: 0;
+}
+
+/* Proyectos */
+
+#proyectos h2+p {
+  margin-top: -4vh;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.proyecto-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.proyecto {
+  width: 25%;
+}
+
+.proyecto-cabecera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proyecto-imagen {
+  width: 18vw;
+  height: 18vw;
+  border-radius: 18vw;
+  border: 3px solid #000;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
+  transition: all .5s;
+}
+
+#cartas {
+  background: url(/mmedia/images/cartas.jpg);
+  background-size: 150% 150%;
+  background-position: 45% -10%;
+  transform: rotate(-25deg);
+}
+
+#notas {
+  background: url(/mmedia/images/notas.jpg);
+  background-size: 180% 110%;
+  background-position: 55% 40%;
+  transform: rotate(-15deg);
+}
+
+#dado {
+  background: url(/mmedia/images/dado.jpg);
+  background-size: 115% 115%;
+  background-position: 50% 80%;
+  transform: rotate(-20deg);
+}
+
+#cartas:hover,
+#notas:hover,
+#dado:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+hr {
+  margin: 5vh 10vw;
+  border: 3px solid #cacaca;
+  border-radius: 3px;
+  box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, .25);
+}
+
+/* CV Cronológico */
+
+#cv-cabecera {
+  margin-bottom: -4vh;
+}
+
+#cv-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#fechas {
+  margin-left: 3vw;
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+  justify-content: space-around;
+}
+
+#linea-temporal {
+  width: 12vw;
+}
+
+.experiencia-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencia-cabecera {
+  margin-left: 4vw;
+  margin-bottom: -4vh;
+}
+
+.experiencia {
+  font-size: larger;
+}
+
+.experiencia p {
+  font-size: larger;
+}
+
+.experiencia-imagen {
+  padding-left: 22.5vw;
+  position: relative;
+}
+
+#real-fernando {
+
+  background: url(/mmedia/images/real-fernando.jpg);
+  background-size: 34%;
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+#arvato {
+  background: url(/mmedia/images/arvato.png);
+  background-size: 34%;
+  background-position: 0;
+  background-repeat: no-repeat;
+}
+
+#techmakers {
+  background: url(/mmedia/images/techmakers.png);
+  background-size: 34%;
+  background-position: 0;
+  background-repeat: no-repeat;
+}
+
+/* No me convence el fondo de tarjeta. Problemático */
+/* #real-fernando::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('/mmedia/images/real-fernando.jpg');
+  background-position: center right -2vw;
+  background-repeat: no-repeat;
+  opacity: .2;
+} */
+
+/* Sobre mí */
+
+#sobre {
+  min-height: 75vh;
+}
+
+#sobre-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#sobre-texto {
+  padding-left: 5vw;
+  width: 50%;
+  font-size: larger;
+}
+
+#sobre-cabecera {
+  font-size: 3.5em;
+  font-weight: normal;
+  text-align: center;
+}
+
+#sobre-imagen {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-self: center;
+}
+
+.guitarra {
+  position: relative;
+  z-index: 1;
+}
+
+.guitarra::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(/mmedia/images/paco-castillo.png);
+  background-position: left 30vw bottom -30vh;
+  background-repeat: no-repeat;
+  opacity: .2;
+}
+
+/* Contacto */
+
+.contacto-wrapper {
+  margin: 4%;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.entrada {
+  margin: 0 0 2em 0;
+}
+
+.entrada input {
+  height: 2em;
+  padding: 0 8px 0 8px;
+}
+
+.entrada textarea {
+  width: 80vw;
+  height: 20vh;
+  padding: 0 16px 0 16px;
+  font-size: 2em;
+}
+
+.entrada input,
+.entrada textarea {
+  font-family: sans-serif;
+  font-size: 1.2em;
+  background: rgba(218, 218, 218, 0.2);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, .5);
+}
+
+.entrada button {
+  width: 160px;
+  height: 2.5em;
+  color: #fff;
+  font-size: 1.2em;
+  background-color: #3b6ea5;
+  border: #3b6ea5;
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, .5);
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+input:hover,
+textarea:hover {
+  outline: 3px solid #3b6ea5;;
+}
+
+button:focus,
+button:hover {
+outline: 3px solid rgba(59, 110, 165, .5);
+}
+
+.entrada-error:invalid {
+  outline: 2px solid #a5723b;
+  background: rgba(166, 114, 60, .25);
+}
+
+.entrada-error-mensaje {
+  margin-top: .5em;
+  font-weight:bold ;
+  color: #a5723b;
+}
+
+/* Recursos sociales */
+
+footer {
+  padding-top: .5em;
+  bottom: 0;
+  height: 30vh;
+  background-color: rgba(59, 110, 165, .5);
+  box-shadow: 0 -8px 14px 0 rgba(0, 0, 0, .25);
+}
+
+.social-wrapper {
+  margin: 0 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform .5s;
+}
+
+.social img:hover {
+  cursor: pointer;
+  transform: translateY(-5%);
+  transition: all 1s;
+}
+
+.social:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Dispositivos móviles y tablets */
+@media only screen and (max-width: 768px) {
+
+  /* Elementos básicos */
+
+  h1 {
+    margin-top: 1.5em;
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 2em;
+    font-weight: normal;
+  }
+
+  h4 {
+    margin-top: .5em;
+    font-size: 2em;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  small {
+    font-size:x-small;
+  }
+
+  /* Estructuras básicas */
+
+  .tarjeta {
+    margin: 4vh 2vh;
+  }
+
+  /* Bienvenida */
+
+  #bienvenida {
+    justify-content: space-around;
+  }
+
+  #bienvenida h1 {
+    margin-top: .5em;
+    font-size: 5em;
+  }
+
+  #bienvenida p {
+    font-size: 2em;
+    font-weight: normal;
+  }
+
+  #bienvenida-texto {
+    margin: 0 -10vw ;
+  }
+
+  #bienvenida-imagen {
+    width: auto;
+  }
+
+  .bienvenida {
+    min-height:auto;
+  }
+
+  #bienvenida-imagen::before {
+    background-size: 60%;
+    background-position: right bottom ;
+    background-repeat: no-repeat;
+    opacity: .6;
+    filter: grayscale(1);
+  }
+
+  /* Testimonios */
+
+  .testimonio p {
+    font-size: 1.25em;
+  }
+
+  /* Proyectos */
+
+  #proyectos h2+p {
+    font-size: 1em;
+  }
+
+  .proyecto-wrapper {
+    flex-direction: column;
+    padding: 0 4vw;
+  }
+
+  .proyecto {
+    width: auto;
+  }
+
+  #proyectos h3+small {
+    margin-top: -4vh;
+    margin-bottom: 4.5vh;
+  }
+
+  .proyecto-imagen {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 40vw;
+  }
+
+  /* CV Cronológico */
+
+  #fechas {
+    font-size: x-large;
+  }
+
+  #linea-temporal {
+    width: 40vw;
+  }
+
+  .experiencia-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experiencia-cabecera {
+    margin-left: 4vw;
+    margin-bottom: -4vh;
+  }
+
+  .experiencia {
+    font-size: large;
+  }
+
+  .experiencia p {
+    font-size: large;
+  }
+
+  #real-fernando,
+  #arvato,
+  #techmakers {
+    padding: 0 2vw 0 20.5vw;
+  }
+
+  /* Sobre mí */
+
+  #sobre {
+    min-height:auto;
+  }
+
+  #sobre-wrapper {
+    flex-direction: column;
+  }
+
+  #sobre-texto {
+    padding: 0 5vw;
+    width: auto;
+    font-size: large;
+  }
+
+  #sobre-cabecera {
+    font-size: 2em;
+  }
+
+  #sobre-imagen {
+    width: auto;
+  }
+
+  .guitarra {
+    position: relative;
+    z-index: 1;
+  }
+
+  .guitarra::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(/mmedia/images/paco-castillo.png);
+    background-position: left -100vw bottom -35vh;
+    background-repeat: no-repeat;
+    opacity: .1;
+  }
+
+  /* Recursos sociales */
+
+  .social-wrapper {
+    margin: 0 5vw;
+  }
+}
