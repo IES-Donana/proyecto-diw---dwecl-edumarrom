@@ -122,6 +122,7 @@ a {
 header {
   margin: 0 6vh 0 6vh;
   display: flex;
+  justify-content: space-around;
 }
 
 #menu {
@@ -134,6 +135,12 @@ header {
   width: 10vw;
   height: 10vh;
   padding-top: 5vh;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 #menu ul {
@@ -162,7 +169,10 @@ header {
 
 /* Dispositivos móviles y tablets */
 @media only screen and (max-width: 768px) {
-  #menu {
+  #menu,
+  #menu-logo {
     display: none;
   }
+
+
 }

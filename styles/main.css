@@ -51,7 +51,7 @@ h3+small {
 /* Bienvenida */
 
 #bienvenida {
-  margin-top: 8vh;
+  margin-top: 4vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -404,18 +404,20 @@ hr {
   border-radius: 15px;
   box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, .5);
   cursor: pointer;
+  transition: transform 0.5s ease-out;
 }
 
 input:focus,
 textarea:focus,
 input:hover,
 textarea:hover {
-  outline: 3px solid #3b6ea5;;
+  outline: 3px solid #3b6ea5;
 }
 
 button:focus,
 button:hover {
-outline: 3px solid rgba(59, 110, 165, .5);
+  outline: 3px solid rgba(59, 110, 165, .5);
+  transform: scale(1.1);  /* UD4-T3.3 */
 }
 
 .entrada-error:invalid {

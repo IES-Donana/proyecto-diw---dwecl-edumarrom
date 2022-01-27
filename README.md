@@ -8,7 +8,7 @@
 
 ## Índice
 1. [Descripción](#descripcion)
-2. [Prototipo](#prototipo)
+2. [Objetivos](#objetivos)
 3. [Modificaciones a la guía de estilos](#modificaciones)
 4. [Recursos](#recursos)
 
@@ -44,8 +44,26 @@ Todos estos errores han sido corregidos.
 ### CSS
 El CSS fue incluso más fácil de validar. Tan sólo había errores (o advertencias, no recuerdo) debido a que usaba el método `grayscale` con argumento vacío, cuando es obligatorio especificarle un valor(i.e: `grayscale(1)`). Por último, en el elemento `textarea` tenía aplicada la propiedad `border` con el mismo color que el `background`. Esto estaba así porque por defecto textarea tiene borde. Lo he resuelto dandole el valor `0`.
 
-## 2. Prototipo<a id="prototipo"></a>
-Para revisar como es mi prototipo dejo aquí el [enlace al prototipo en Figma.](https://www.figma.com/file/Jx8TdgBvmOWf6QPgR7NAmA/portfolio)
+## 2. Objetivos<a id="objetivos"></a>
+
+### A. Generación de animaciones y elementos interactivos.
+1. Aplica transiciones a todos los elementos de menú que tienes en tu sitio web. Elije la transición que más se adapte a tu estilo.
+
+Este punto estaba ya realizado desde la entrega 2 del prooyecto. Los dos menús que existen en el portfolio (cabecera y menú lateral) tienen transiciones que se disparan cuando pasas el cursor por encima.
+
+2. Añade una animación para que el logo de tu página aparezca de forma progresiva. Deberás reproducirse solo una vez.
+
+Para este punto he decidido crear un logotipo nuevo, ya que el realizado en la entrega 3 me resultaba demasiado soso, y tampoco parecía integrarse demasiado bien en el portfolio.
+
+El nuevo logo ha sido ubicado en la cabecera de la página con una simple animación de aparición.
+
+3. Elije otro elemento de tu web al que aplicar una transición. Recuerda que la elección del elemento y la animación deben integrarse de forma adecuada a tu diseño.
+
+He aplicado una transición que amplia el botón de envío de formulario cuando se le da el foco o se pasa el cursor sobre él.
+
+4. Elije otro elemento de tu web al que aplicar una animación. Recuerda que la elección del elemento y la animación deben integrarse de forma adecuada a tu diseño.
+
+No tenía muy claro qué animar, así que basándome en la modificación que hizo Pablo, agregando el logotipo al menú lateral, voy a incluirlo en mi proyecto, con la particularidad de que el logotipo girará sobre sí mismo cuando se pase el ratón sobre él.
 
 ## 3. Modificaciones a la guía de estilos<a id="modificaciones"></a>
 ### 3.1 Colores

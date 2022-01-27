@@ -33,6 +33,8 @@ const contacto = document.createElement('a');
 contacto.setAttribute('href', '#contacto');
 contacto.textContent = 'Contacto';
 
+// TODO: Insertar aquí logotipo y animarlo cuando se ponga el cursor encima
+
 const elementos = [inicio, proyectos, cv, contacto];
 
 for (const e of elementos) {
