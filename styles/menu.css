@@ -201,7 +201,7 @@ header {
 /* Dispositivos móviles y tablets */
 @media only screen and (max-width: 768px) {
   #menu,
-  .menu-logo {
+  #menu-logo {
     display: none;
   }
 
