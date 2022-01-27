@@ -102,7 +102,7 @@ summary p {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(mmedia/images/yo.jpg);
+  background-image: url(../mmedia/images/yo.jpg);
   background-size: 60%;
   background-position: right 0 bottom 90%;
   background-repeat: no-repeat;
@@ -143,7 +143,7 @@ summary p {
   width: 30vw;
   height: 30vw;
   border-radius: 30vw;
-  background: url(mmedia/images/diogenes.jpg);
+  background: url(../mmedia/images/diogenes.jpg);
   background-size: 140% 200%;
   background-position: 50% 10%;
   background-repeat: no-repeat;
@@ -206,21 +206,21 @@ summary p {
 }
 
 #cartas {
-  background: url(mmedia/images/cartas.jpg);
+  background: url(../mmedia/images/cartas.jpg);
   background-size: 150% 150%;
   background-position: 45% -10%;
   transform: rotate(-25deg);
 }
 
 #notas {
-  background: url(mmedia/images/notas.jpg);
+  background: url(../mmedia/images/notas.jpg);
   background-size: 180% 110%;
   background-position: 55% 40%;
   transform: rotate(-15deg);
 }
 
 #dado {
-  background: url(mmedia/images/dado.jpg);
+  background: url(../mmedia/images/dado.jpg);
   background-size: 115% 115%;
   background-position: 50% 80%;
   transform: rotate(-20deg);
@@ -289,7 +289,7 @@ hr {
 
 #real-fernando {
 
-  background: url(mmedia/images/real-fernando.jpg);
+  background: url(../mmedia/images/real-fernando.jpg);
   background-size: 34%;
   background-position: 0;
   background-repeat: no-repeat;
@@ -297,14 +297,14 @@ hr {
 }
 
 #arvato {
-  background: url(mmedia/images/arvato.png);
+  background: url(../mmedia/images/arvato.png);
   background-size: 34%;
   background-position: 0;
   background-repeat: no-repeat;
 }
 
 #techmakers {
-  background: url(mmedia/images/techmakers.png);
+  background: url(../mmedia/images/techmakers.png);
   background-size: 34%;
   background-position: 0;
   background-repeat: no-repeat;
@@ -319,7 +319,7 @@ hr {
   bottom: 0;
   left: 0;
   right: 0;
-  background: url('mmedia/images/real-fernando.jpg');
+  background: url('../mmedia/images/real-fernando.jpg');
   background-position: center right -2vw;
   background-repeat: no-repeat;
   opacity: .2;
@@ -369,7 +369,7 @@ hr {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(mmedia/images/paco-castillo.png);
+  background-image: url(../mmedia/images/paco-castillo.png);
   background-position: left 30vw bottom -30vh;
   background-repeat: no-repeat;
   opacity: .2;
@@ -661,7 +661,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url(mmedia/images/paco-castillo.png);
+    background-image: url(../mmedia/images/paco-castillo.png);
     background-position: left -100vw bottom -35vh;
     background-repeat: no-repeat;
     opacity: .1;
