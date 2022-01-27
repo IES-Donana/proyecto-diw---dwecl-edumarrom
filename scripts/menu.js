@@ -33,7 +33,11 @@ const contacto = document.createElement('a');
 contacto.setAttribute('href', '#contacto');
 contacto.textContent = 'Contacto';
 
-// TODO: Insertar aquí logotipo y animarlo cuando se ponga el cursor encima
+// UD4-T3.4
+const logotipo = document.createElement('img');
+logotipo.setAttribute('src', 'mmedia/icons/emartinez-logo.svg');
+logotipo.classList.add('burger-logo');
+
 
 const elementos = [inicio, proyectos, cv, contacto];
 
@@ -45,6 +49,7 @@ for (const e of elementos) {
 
 /* Aplicamos estilo al menú */
 nav.appendChild(ul);
+nav.appendChild(logotipo);  // UD4-T3.4
 nav.setAttribute('id', 'burger');
 nav.classList.add('menu-container');
 nav.classList.add('active');

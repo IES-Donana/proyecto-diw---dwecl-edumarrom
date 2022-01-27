@@ -49,6 +49,32 @@ a {
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* Logotipo en el menú lateral */
+
+.burger-logo {
+  width: 20vw;
+  height: 20vh;
+}
+
+/* UD4-T3.4 */
+.burger-logo:hover {
+  animation: spin linear infinite 3s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+    moz-transform: rotateY(0deg);
+    ms-transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+    moz-transform: rotateY(360deg);
+    ms-transform: rotateY(360deg);
+  }
+}
+
 /* Botón de menú (Tipo Burger) */
 
 .menu-btn {
@@ -127,14 +153,19 @@ header {
 
 #menu {
   height: 10vh;
+  width: 75vw; /* Sin ésto los elementos del menú quedan muy apretados */
   margin: 0;
   padding-top: 5vh;
 }
 
-#menu-logo {
+/* UD4-T3.2 */
+.menu-logo {
   width: 10vw;
   height: 10vh;
   padding-top: 5vh;
+}
+
+.fadeIn {
   animation: fadeIn 3s;
 }
 

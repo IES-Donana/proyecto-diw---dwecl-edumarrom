@@ -47,6 +47,7 @@ El CSS fue incluso más fácil de validar. Tan sólo había errores (o advertenc
 ## 2. Objetivos<a id="objetivos"></a>
 
 ### A. Generación de animaciones y elementos interactivos.
+#### Tarea 3:
 1. Aplica transiciones a todos los elementos de menú que tienes en tu sitio web. Elije la transición que más se adapte a tu estilo.
 
 Este punto estaba ya realizado desde la entrega 2 del prooyecto. Los dos menús que existen en el portfolio (cabecera y menú lateral) tienen transiciones que se disparan cuando pasas el cursor por encima.
@@ -61,9 +62,17 @@ El nuevo logo ha sido ubicado en la cabecera de la página con una simple animac
 
 He aplicado una transición que amplia el botón de envío de formulario cuando se le da el foco o se pasa el cursor sobre él.
 
+> Las modificaciones pueden observarse en las líneas 407 y 420 del fichero `main.css`
+
 4. Elije otro elemento de tu web al que aplicar una animación. Recuerda que la elección del elemento y la animación deben integrarse de forma adecuada a tu diseño.
 
 No tenía muy claro qué animar, así que basándome en la modificación que hizo Pablo, agregando el logotipo al menú lateral, voy a incluirlo en mi proyecto, con la particularidad de que el logotipo girará sobre sí mismo cuando se pase el ratón sobre él.
+
+> La imagen se inserta desde el script `menu.js` (líneas 36 y 52), con la clase *burger-logo*. Luego a través de `menu.css` aplico la animación `spin` (líneas 59-76).
+
+### B. Inserción de contenido multimedia.
+
+- He incluido un favicon, exportado a png a partir del nuevo logo realizado en Inkscape para la tarea 3 del apartado A.
 
 ## 3. Modificaciones a la guía de estilos<a id="modificaciones"></a>
 ### 3.1 Colores

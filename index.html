@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/main.css">
   <link rel="stylesheet" href="/styles/menu.css">
+  <link rel="icon" type="image/png" href="mmedia/icons/favicon.png">
   <script defer src="/scripts/menu.js"></script>
   <script defer src="/scripts/validar.js"></script>
   <title>Eduardo Martínez - PortFolio</title>
@@ -19,8 +20,9 @@
 
   <div id="inicio" class="flex-container">
     <header>
+      <!-- UD4-T3.2 -->
       <div>
-        <img id=menu-logo src="mmedia/icons/emartinez-logo.svg" alt="logotipo: emartinez">
+        <img class="menu-logo fadeIn" src="mmedia/icons/emartinez-logo.svg" alt="logotipo: emartinez">
       </div>
       <nav id ="menu">
         <ul>
@@ -212,7 +214,11 @@
             clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
           </iframe>
         </div>
-        <p><small>Fundador de la Startup 4Nerds</small></p>
+        <details>
+          <summary><p><small>Fundador de la Startup 4Nerds</small></p></summary>
+          <img class="menu-logo spin" src="mmedia/icons/emartinez-logo.svg" alt="logotipo: emartinez">
+        </details>
+        <!-- <p><small>Fundador de la Startup 4Nerds</small></p> -->
       </div>
     </section>
 
@@ -272,6 +278,10 @@
           <small>Reddit</small>
         </div>
       </div>
+      <details>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+      </details>
     </footer>
   </div>
 </body>
