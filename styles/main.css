@@ -49,6 +49,12 @@ h3+small {
 }
 
 /* PRBANDO COSAS */
+
+summary::marker {
+  display: none;
+  content: '';
+}
+
 summary:hover {
   cursor: pointer;
 }
