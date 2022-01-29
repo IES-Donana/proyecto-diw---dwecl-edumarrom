@@ -49,30 +49,50 @@ El CSS fue incluso más fácil de validar. Tan sólo había errores (o advertenc
 ### A. Generación de animaciones y elementos interactivos.
 #### Tarea 3:
 1. Aplica transiciones a todos los elementos de menú que tienes en tu sitio web. Elije la transición que más se adapte a tu estilo.
-
-Este punto estaba ya realizado desde la entrega 2 del prooyecto. Los dos menús que existen en el portfolio (cabecera y menú lateral) tienen transiciones que se disparan cuando pasas el cursor por encima.
+- Este punto estaba ya realizado desde la entrega 2 del prooyecto. Los dos menús que existen en el portfolio (cabecera y menú lateral) tienen transiciones que se disparan cuando pasas el cursor por encima.
 
 2. Añade una animación para que el logo de tu página aparezca de forma progresiva. Deberás reproducirse solo una vez.
 
-Para este punto he decidido crear un logotipo nuevo, ya que el realizado en la entrega 3 me resultaba demasiado soso, y tampoco parecía integrarse demasiado bien en el portfolio.
+- Para este punto he decidido crear un logotipo nuevo, ya que el realizado en la entrega 3 me resultaba demasiado soso, y tampoco parecía integrarse demasiado bien en el portfolio.
 
-El nuevo logo ha sido ubicado en la cabecera de la página con una simple animación de aparición.
+- El nuevo logo ha sido ubicado en la cabecera de la página con una simple animación de aparición.
 
 3. Elije otro elemento de tu web al que aplicar una transición. Recuerda que la elección del elemento y la animación deben integrarse de forma adecuada a tu diseño.
 
-He aplicado una transición que amplia el botón de envío de formulario cuando se le da el foco o se pasa el cursor sobre él.
+- He aplicado una transición que amplia el botón de envío de formulario cuando se le da el foco o se pasa el cursor sobre él.
 
-> Las modificaciones pueden observarse en las líneas 407 y 420 del fichero `main.css`
+    > Las modificaciones pueden observarse en las líneas 407 y 420 del fichero `main.css`
 
 4. Elije otro elemento de tu web al que aplicar una animación. Recuerda que la elección del elemento y la animación deben integrarse de forma adecuada a tu diseño.
 
-No tenía muy claro qué animar, así que basándome en la modificación que hizo Pablo, agregando el logotipo al menú lateral, voy a incluirlo en mi proyecto, con la particularidad de que el logotipo girará sobre sí mismo cuando se pase el ratón sobre él.
+- No tenía muy claro qué animar, así que basándome en la modificación que hizo Pablo, agregando el logotipo al menú lateral, voy a incluirlo en mi proyecto, con la particularidad de que el logotipo girará sobre sí mismo cuando se pase el ratón sobre él.
 
-> La imagen se inserta desde el script `menu.js` (líneas 36 y 52), con la clase *burger-logo*. Luego a través de `menu.css` aplico la animación `spin` (líneas 59-76).
+    > La imagen se inserta desde el script `menu.js` (líneas 36 y 52), con la clase *burger-logo*. Luego a través de `menu.css` aplico la animación `spin` (líneas 59-76).
+
+#### Tarea 4:
+1. Añade un elemento "details" en tu sitio web donde incluyas dentro el gif animado que creaste en la entrega 3. Aplícale estilos adecuados y ubícalo en alguna parte de tu web donde no rompa con el diseño.
+
+- En mi caso la animación no es un GIF, sino una animación aplicada por CSS. Se encuentra oculta en el segundo testimonio. Pulsando sobre el texto "Fundador de la Startup 4Nerds"
+    > index.html -> línea 217
+
+2. Añade un elemento "dialog" en tu sitio web donde incluyas tu información de contacto. Aplícale estilos y ubícalo en alguna parte de tu web donde no rompa con el diseño.
+
+- Este elemento dialog se encuentra en el footer, también oculto, bajo la frase "Si me necesitas, ya sabes donde estoy". Abre una ventana modal con aspecto de tarjeta de visita.
+    > index.html -> línea 264
+
+    > main.css -> línea 491
 
 ### B. Inserción de contenido multimedia.
 
 - He incluido un favicon, exportado a png a partir del nuevo logo realizado en Inkscape para la tarea 3 del apartado A.
+
+- He incluido el logo SVG en distintos lugares del sitio: Cabecera, menú lateral y la ventana modal de contacto.
+
+- Sobre la etiqueta picture, por la forma en que he implementado las imágenes, no tengo ninguna imagen que requiera de puntos de ruptura, ya que las imágenes se adaptan de forma dinámica a través de CSS.
+
+- He incluido un efecto sobre los botones de los proyectos, de modo que se encuentren en escala de grises hasta que pases el cursor por encima.
+
+- Incluyo el sonido de fondo en la página.
 
 ## 3. Modificaciones a la guía de estilos<a id="modificaciones"></a>
 ### 3.1 Colores

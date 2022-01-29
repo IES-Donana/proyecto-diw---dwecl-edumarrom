@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,14 @@
   <script defer src="scripts/validar.js"></script>
   <title>Eduardo Martínez - PortFolio</title>
 </head>
+
 <body>
+  <audio id="bg-sound" autoplay loop>
+    <source src="mmedia/audios/bg-sound.ogg" type="audio/ogg">
+    <source src="mmedia/audios/bg-sound.mp3" type="audio/mpeg">
+    Ups :( Parece que tu navegador no soporta este audio).
+    <script>document.querySelector('#bg-sound').volume = 0.1;</script>
+  </audio>
   <div class="menu-btn oculto">
     <div class="menu-btn_burger"></div>
   </div>
@@ -24,7 +32,7 @@
       <div>
         <img class="menu-logo fadeIn" src="mmedia/icons/emartinez-logo.svg" alt="logotipo: emartinez">
       </div>
-      <nav id ="menu">
+      <nav id="menu">
         <ul>
           <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#cv">Experiencia</a></li>
@@ -34,6 +42,7 @@
       </nav>
     </header>
     <section id="bienvenida" class="tarjeta bienvenida">
+      <video id="bienvenida-bgvideo" src="mmedia/videos/drops.mp4" autoplay muted loop ></video>
       <div id="bienvenida-texto">
         <h1>Hey Hello!</h1>
         <p>
@@ -129,7 +138,7 @@
               <div class="experiencia-cabecera">
                 <h3>Cristóbal Anillo</h3>
               </div>
-              <div id="real-fernando" class="tarjeta experiencia-imagen" >
+              <div id="real-fernando" class="tarjeta experiencia-imagen">
                 <p>
                   La vida da muchas vueltas... y darlas en barco es mucho mejor.
                   Realizábamos visitas al P.N. Doñana en un recorrido fluvial
@@ -209,13 +218,21 @@
 
       <div class="testimonio-autor">
         <div id="contenedor-video">
-          <iframe id="testimonio-video" src="https://www.youtube.com/embed/NDe13n_WpQA"
-            title="YouTube video player" allow="accelerometer; autoplay;
+          <video id="testimonio-video" controls poster="mmedia/images/testimonio-poster.png">
+            <source src="mmedia/videos/testimonio.ogv" type="video/ogg" codecs="theora, vorbis">
+            <source src="mmedia/videos/testimonio.mp4" type="audio/mp4">
+
+            Ups :( Parece que tu navegador no soporta este vídeo.
+          </video>
+          <!-- <iframe id="testimonio-video" src="https://www.youtube.com/embed/NDe13n_WpQA" title="YouTube video player"
+            allow="accelerometer; autoplay;
             clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-          </iframe>
+          </iframe> -->
         </div>
         <details>
-          <summary><p><small>Fundador de la Startup 4Nerds</small></p></summary>
+          <summary>
+            <p><small>Fundador de la Startup 4Nerds</small></p>
+          </summary>
           <img class="menu-logo spin" src="mmedia/icons/emartinez-logo.svg" alt="logotipo: emartinez">
         </details>
         <!-- <p><small>Fundador de la Startup 4Nerds</small></p> -->
@@ -228,28 +245,27 @@
         <div class="contacto-wrapper">
           <div class="entrada">
             <label for="nombre"></label>
-            <input type="text" name="nombre" id="nombre"
-              required pattern="^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s]{2,44}"
+            <input type="text" name="nombre" id="nombre" required pattern="^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s]{2,44}"
               maxlength="45" placeholder="Tu nombre">
           </div>
 
           <div class="entrada">
             <label for="email"></label>
-            <input type="email" name="email" id="email"
-              required pattern="^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$"
-              maxlength="255" placeholder="Tu email">
+            <input type="email" name="email" id="email" required
+              pattern="^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$" maxlength="255"
+              placeholder="Tu email">
           </div>
 
           <div class="entrada">
             <label for="asunto"></label>
-            <input type="text" name="asunto" id="asunto"
-              required pattern="^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9\s]{4,120}" placeholder="Asunto">
+            <input type="text" name="asunto" id="asunto" required pattern="^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9\s]{4,120}"
+              placeholder="Asunto">
           </div>
 
           <div class="entrada">
             <label for="mensaje"></label>
-            <textarea name="mensaje" id="mensaje"
-              required minlength="10" maxlength="500" placeholder="Hey hello..." disabled></textarea>
+            <textarea name="mensaje" id="mensaje" required minlength="10" maxlength="500" placeholder="Hey hello..."
+              disabled></textarea>
           </div>
           <div class="entrada">
             <button type="submit" id="enviar">¡Vamos allá!</button>
@@ -259,10 +275,32 @@
     </section>
 
     <footer>
-      <dialog>
-        <h4></h4>
-      </dialog>
-      <h4 style="cursor: pointer;" onclick="document.getElementById('dialogo').showModal()"">Si me necesitas, ya sabes donde estoy</h4>
+      <div>
+        <h4 style="cursor: pointer;" onclick="document.getElementById('dialogo').showModal()"">Si me necesitas, ya sabes donde estoy</h4>
+        <dialog id=" dialogo">
+
+          <div id="dialogo-cabecera">
+            <div>
+              <img class="menu-logo" src="mmedia/icons/emartinez-logo.svg" width="50" alt="logotipo">
+            </div>
+            <div>
+              <h4>Eduardo Martínez Romero</h4>
+            </div>
+          </div>
+          <div id="dialogo-contenido">
+            <div class="dialogo-entrada">
+              <img src="mmedia/icons/location.png" width="30" alt="Ubicación"><span>C/ Desengaño, 21. Madrid -
+                España</span>
+            </div>
+            <div class="dialogo-entrada">
+              <img src="mmedia/icons/email.png" width="30" alt="Email"><span>eduardo.martinez@iesdonana.org</span>
+            </div>
+          </div>
+          <div id="dialogo-boton">
+            <button id="cerrar" onclick="document.getElementById('dialogo').close()">Cerrar</button>
+          </div>
+          </dialog>
+      </div>
       <div class="social-wrapper">
         <div class="social">
           <img src="mmedia/icons/whatsapp.png" width="50" alt="Teléfono">
@@ -284,4 +322,5 @@
     </footer>
   </div>
 </body>
+
 </html>
