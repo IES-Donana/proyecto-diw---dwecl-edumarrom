@@ -185,6 +185,7 @@ summary p {
   width: 75%;
   height: 75%;
   border: 0;
+  border-radius: 20px;
 }
 
 /* Proyectos */
