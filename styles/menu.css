@@ -57,22 +57,9 @@ a {
 }
 
 /* UD4-T3.4 */
+/* La animación "spin" está definida en main.css */
 .burger-logo:hover {
   animation: spin linear infinite 3s;
-}
-
-@keyframes spin {
-  from {
-    transform: rotateY(0deg);
-    moz-transform: rotateY(0deg);
-    ms-transform: rotateY(0deg);
-  }
-
-  to {
-    transform: rotateY(360deg);
-    moz-transform: rotateY(360deg);
-    ms-transform: rotateY(360deg);
-  }
 }
 
 /* Botón de menú (Tipo Burger) */
@@ -201,9 +188,8 @@ header {
 /* Dispositivos móviles y tablets */
 @media only screen and (max-width: 768px) {
   #menu,
-  #menu-logo {
+  .menu-logo {
     display: none;
   }
-
 
 }
