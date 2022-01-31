@@ -36,6 +36,7 @@ contacto.textContent = 'Contacto';
 // UD4-T3.4
 const logotipo = document.createElement('img');
 logotipo.setAttribute('src', 'mmedia/icons/emartinez-logo.svg');
+logotipo.setAttribute('alt', 'Logotipo animado de Eduardo.');
 logotipo.classList.add('burger-logo');
 
 
