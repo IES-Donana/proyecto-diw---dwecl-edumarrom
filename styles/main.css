@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Animaciones */
+/**************************
+ * Animaciones
+ **************************/
 
 .spin {
   animation: spin linear infinite 3s;
@@ -20,7 +22,10 @@
   }
 }
 
-/* Elementos básicos */
+/**************************
+ * Elementos básicos
+ **************************/
+
 body {
   background: #fff;
   font-family: 'Roboto', sans-serif;
@@ -58,7 +63,10 @@ h3+small {
   margin-bottom: 30px;
 }
 
-/* Estucturas básicas */
+/**************************
+ * Estructuras básicas
+ **************************/
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -72,7 +80,9 @@ h3+small {
   box-shadow: 8px 8px 14px 8px rgba(0, 0, 0, .25);
 }
 
-/* Bienvenida */
+/**************************
+ * Bienvenida
+ **************************/
 
 #bienvenida {
   margin-top: 4vh;
@@ -128,7 +138,9 @@ h3+small {
   filter: opacity(0.8);
 }
 
-/* Testimonio 1 */
+/**************************
+ * Testimonio 1
+ **************************/
 
 .testimonio p {
   font-size: 2em;
@@ -169,7 +181,9 @@ h3+small {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
 }
 
-/* Testimonio 2 */
+/**************************
+ * Testimonio 2
+ **************************/
 
 #contenedor-video {
   position: relative;
@@ -190,7 +204,13 @@ h3+small {
   border-radius: 20px;
 }
 
-/* Summary oculto en testimonio 2 */
+/*----------------------------------
+ * UD4. T4. Elementos interactivos.
+ *----------------------------------
+ * Summary oculto en el segundo
+ * testimonio.
+ *
+ */
 
 summary p {
   display: inline;
@@ -205,7 +225,9 @@ summary:hover {
   cursor: pointer;
 }
 
-/* Proyectos */
+/**************************
+ * Proyectos
+ **************************/
 
 #proyectos h2+p {
   margin-top: -4vh;
@@ -413,7 +435,9 @@ hr {
   opacity: .2;
 }
 
-/* Contacto */
+/**************************
+ * Contacto
+ **************************/
 
 .contacto-wrapper {
   margin: 4%;
@@ -487,7 +511,9 @@ button:hover {
   color: #a5723b;
 }
 
-/* Recursos sociales */
+/**************************
+ * Recursos sociales
+ **************************/
 
 footer {
   padding-top: .5em;
@@ -522,7 +548,13 @@ footer {
   transform: scale(1.1);
 }
 
-/* Diálogo de contacto */
+/*----------------------------------
+ * UD4. T4. Elementos interactivos.
+ *----------------------------------
+ * Dialog que trata de simular una
+ * tarjeta de visita.
+ *
+ */
 
 #dialogo {
   border: 1px solid #8c8c8c;
@@ -569,7 +601,9 @@ footer {
   border-radius: 1vh;
 }
 
-/* Dispositivos móviles y tablets */
+/**************************
+ * Breakpoint: DIspositivos móviles y tablets
+ **************************/
 @media only screen and (max-width: 768px) {
 
   /* Elementos básicos */

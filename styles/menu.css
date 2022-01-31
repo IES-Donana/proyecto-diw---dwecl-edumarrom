@@ -49,14 +49,12 @@ a {
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Logotipo en el menú lateral */
-
+/* UD4-T3.4: Logotipo en el menú lateral */
 .burger-logo {
   width: 20vw;
   height: 20vh;
 }
 
-/* UD4-T3.4 */
 /* La animación "spin" está definida en main.css */
 .burger-logo:hover {
   animation: spin linear infinite 3s;
