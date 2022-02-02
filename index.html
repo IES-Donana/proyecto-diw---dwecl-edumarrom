@@ -31,7 +31,7 @@
     <header role="banner">
       <!-- UD4-T3.2 -->
       <div>
-        <img class="menu-logo fadeIn" src="mmedia/icons/emartinez-logo.svg" alt="Logotipo de Eduardo">
+        <img class="menu-logo fadeIn" src="mmedia/icons/emartinez-logo.svg">
       </div>
       <nav id="menu" role="navigation">
         <ul>
@@ -124,7 +124,7 @@
           </div>
         </section>
 
-        <hr>
+        <hr role="separator">
 
         <section id="cv">
           <div id="cv-cabecera">
@@ -248,29 +248,29 @@
 
       <section id="contacto">
         <h2>¿Listo para trabajar juntos?</h2>
-        <form action="#contacto" method="GET" role="form">
+        <form action="#contacto" method="GET" role="form" aria-label="Formulario de contacto">
           <div class="contacto-wrapper">
             <div class="entrada">
-              <label for="nombre"></label>
+              <label for="nombre" title="Tu nombre"></label>
               <input type="text" name="nombre" id="nombre" required pattern="^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s]{2,44}"
                 maxlength="45" placeholder="Tu nombre">
             </div>
 
             <div class="entrada">
-              <label for="email"></label>
+              <label for="email" title="Tu email"></label>
               <input type="email" name="email" id="email" required
                 pattern="^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$" maxlength="255"
                 placeholder="Tu email">
             </div>
 
             <div class="entrada">
-              <label for="asunto"></label>
+              <label for="asunto" title="Asunto"></label>
               <input type="text" name="asunto" id="asunto" required pattern="^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9\s]{4,120}"
                 placeholder="Asunto">
             </div>
 
             <div class="entrada">
-              <label for="mensaje"></label>
+              <label for="mensaje" title="Tu mensaje"></label>
               <textarea name="mensaje" id="mensaje" required minlength="10" maxlength="500" placeholder="Hey hello..."
                 disabled></textarea>
             </div>
@@ -318,19 +318,19 @@
       </div>
       <div class="social-wrapper">
         <div class="social">
-          <img src="mmedia/icons/whatsapp.png" width="50" alt="Teléfono">
+          <img src="mmedia/icons/whatsapp.png" width="50" alt="Teléfono de contacto y WhatsApp">
           <small>+34 666 66 66 66</small>
         </div>
         <div class="social">
-          <img src="mmedia/icons/linkedin.png" width="50" alt="Enlace a mi LikedIn">
+          <img src="mmedia/icons/linkedin.png" width="50" alt="Enlace a mi perfil de LikedIn">
           <small>LinkedIn</small>
         </div>
         <div class="social">
-          <img src="mmedia/icons/github.png" width="50" alt="Enlace a mi GitHub">
+          <img src="mmedia/icons/github.png" width="50" alt="Enlace a mi perfil de GitHub">
           <small>GitHub</small>
         </div>
         <div class="social">
-          <img src="mmedia/icons/reddit.png" width="50" alt="Enlace a mi Reddit">
+          <img src="mmedia/icons/reddit.png" width="50" alt="Enlace a mi perfil de Reddit">
           <small>Reddit</small>
         </div>
       </div>
