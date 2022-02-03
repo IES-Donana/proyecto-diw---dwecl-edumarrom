@@ -15,12 +15,13 @@
 </head>
 
 <body>
-  <audio id="bg-sound" autoplay loop alt="">
+  <!-- Audio no aporta contexto a la entrega 5 -->
+  <!-- <audio id="bg-sound" autoplay loop>
     <source src="mmedia/audios/bg-sound.ogg" type="audio/ogg">
     <source src="mmedia/audios/bg-sound.mp3" type="audio/mpeg">
     Vaya! :( Parece que tu navegador no soporta este audio.
-    <!-- Este audio está silenciado desde JS -->
-  </audio>
+    /* Este audio está silenciado desde JS */
+  </audio> -->
   <div class="menu-btn oculto">
     <div class="menu-btn_burger"></div>
   </div>
@@ -28,7 +29,7 @@
   <!-- Aquí cae el menú lateral desplegable-->
 
   <div id="inicio" class="flex-container">
-    <header role="header">
+    <header>
       <!-- UD4-T3.2 -->
       <div>
         <img class="menu-logo fadeIn" src="mmedia/icons/emartinez-logo.svg" alt="">
@@ -45,7 +46,7 @@
 
     <main>
       <section id="bienvenida" class="tarjeta bienvenida">
-        <video id="bienvenida-bgvideo" autoplay muted loop alt="">
+        <video id="bienvenida-bgvideo" autoplay muted loop>
           <source src="mmedia/videos/drops.webm" type="video/webm">
           <source src="mmedia/videos/drops.mp4" type="video/mp4">
           Vaya! :( Parece que tu navegador no soporta este vídeo.
@@ -124,7 +125,7 @@
           </div>
         </section>
 
-        <hr role="separator">
+        <hr>
 
         <section id="cv">
           <div id="cv-cabecera">
@@ -225,9 +226,9 @@
 
         <div class="testimonio-autor">
           <div id="contenedor-video">
-            <video id="testimonio-video" alt="Testimonio de Señor Aleatorio" controls
+            <video id="testimonio-video" controls
               poster="mmedia/images/testimonio-poster.png">
-              <source src="mmedia/videos/testimonio.ogv" type="video/ogg" codecs="theora, vorbis">
+              <source src="mmedia/videos/testimonio.ogv" type="video/ogg">
               <source src="mmedia/videos/testimonio.mp4" type="audio/mp4">
               Ups :( Parece que tu navegador no soporta este vídeo.
             </video>
@@ -249,7 +250,7 @@
 
       <section id="contacto">
         <h2>¿Listo para trabajar juntos?</h2>
-        <form action="#contacto" method="GET" role="form" aria-label="Formulario de contacto">
+        <form action="#contacto" method="GET" aria-label="Formulario de contacto">
           <div class="contacto-wrapper">
             <div class="entrada">
               <input title="Tu nombre" aria-label="Nombre" type="text" name="nombre" id="nombre" required pattern="^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s]{2,44}"
@@ -278,7 +279,7 @@
       </section>
     </main>
 
-    <footer role="contentinfo">
+    <footer>
       <div>
         <p id="social-cabecera">Si me necesitas, ya sabes donde estoy</p>
         <!-- Desactivo la tarje de bienvenida -->
