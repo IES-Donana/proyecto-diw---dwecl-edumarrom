@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es_ES">
 
 <head>
   <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <audio id="bg-sound" autoplay loop alt="Sonido de fondo del PortFolio">
+  <audio id="bg-sound" autoplay loop alt="">
     <source src="mmedia/audios/bg-sound.ogg" type="audio/ogg">
     <source src="mmedia/audios/bg-sound.mp3" type="audio/mpeg">
     Vaya! :( Parece que tu navegador no soporta este audio.
@@ -28,12 +28,12 @@
   <!-- Aquí cae el menú lateral desplegable-->
 
   <div id="inicio" class="flex-container">
-    <header role="banner">
+    <header role="header">
       <!-- UD4-T3.2 -->
       <div>
-        <img class="menu-logo fadeIn" src="mmedia/icons/emartinez-logo.svg">
+        <img class="menu-logo fadeIn" src="mmedia/icons/emartinez-logo.svg" alt="">
       </div>
-      <nav id="menu" role="navigation">
+      <nav id="menu">
         <ul>
           <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#cv">Experiencia</a></li>
@@ -43,9 +43,9 @@
       </nav>
     </header>
 
-    <main role="main">
+    <main>
       <section id="bienvenida" class="tarjeta bienvenida">
-        <video id="bienvenida-bgvideo" autoplay muted loop>
+        <video id="bienvenida-bgvideo" autoplay muted loop alt="">
           <source src="mmedia/videos/drops.webm" type="video/webm">
           <source src="mmedia/videos/drops.mp4" type="video/mp4">
           Vaya! :( Parece que tu navegador no soporta este vídeo.
@@ -187,7 +187,7 @@
       <section id="sobre" class="tarjeta guitarra">
         <div id="sobre-wrapper">
           <div id="sobre-texto">
-            <p id="sobre-cabecera">¿Y qué más hago aparte de trabajar?</p>
+            <h2 id="sobre-cabecera">¿Y qué más hago aparte de trabajar?</h2>
             <p>
               Hay muchas cosas de las que podría hablar. Una de mis aficiones es la
               música. Desde pequeño tuve interés en los instrumentos y entre ellos la
@@ -225,10 +225,10 @@
 
         <div class="testimonio-autor">
           <div id="contenedor-video">
-            <video id="testimonio-video" controls poster="mmedia/images/testimonio-poster.png">
+            <video id="testimonio-video" alt="Testimonio de Señor Aleatorio" controls
+              poster="mmedia/images/testimonio-poster.png">
               <source src="mmedia/videos/testimonio.ogv" type="video/ogg" codecs="theora, vorbis">
               <source src="mmedia/videos/testimonio.mp4" type="audio/mp4">
-
               Ups :( Parece que tu navegador no soporta este vídeo.
             </video>
             <!-- <iframe id="testimonio-video" src="https://www.youtube.com/embed/NDe13n_WpQA" title="YouTube video player"
@@ -236,13 +236,14 @@
               clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe> -->
           </div>
-          <details>
+          <!-- Desactivo el details porque no aporta nada ninguna información -->
+          <!-- <details>
             <summary>
               <p><small>Fundador de la Startup 4Nerds</small></p>
             </summary>
             <img class="menu-logo spin" src="mmedia/icons/emartinez-logo.svg" alt="logotipo: emartinez">
-          </details>
-          <!-- <p><small>Fundador de la Startup 4Nerds</small></p> -->
+          </details> -->
+          <p><small>Fundador de la Startup 4Nerds</small></p>
         </div>
       </section>
 
@@ -257,13 +258,11 @@
 
             <div class="entrada">
               <input type="email" name="email" id="email" required maxlength="255"
-                pattern="^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$"
-                placeholder="Tu email">
+                pattern="^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$" placeholder="Tu email">
             </div>
 
             <div class="entrada">
-              <input type="text" name="asunto" id="asunto" required
-                pattern="^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9\s]{4,120}"
+              <input type="text" name="asunto" id="asunto" required pattern="^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9\s]{4,120}"
                 placeholder="Asunto">
             </div>
 
@@ -281,9 +280,9 @@
 
     <footer role="contentinfo">
       <div>
-        <h4 style="cursor: pointer;" onclick="document.getElementById('dialogo').showModal()"">Si me necesitas, ya sabes donde estoy</h4>
-        <dialog id=" dialogo">
-
+        <p id="social-cabecera">Si me necesitas, ya sabes donde estoy</p>
+        <!-- Desactivo la tarje de bienvenida -->
+        <!-- <dialog id=" dialogo">
           <div id="dialogo-cabecera">
             <div>
               <img class="menu-logo" src="mmedia/icons/emartinez-logo.svg" width="50" alt="logotipo">
@@ -311,25 +310,33 @@
           <div id="dialogo-boton">
             <button id="cerrar" onclick="document.getElementById('dialogo').close()">Cerrar</button>
           </div>
-          </dialog>
+        </dialog> -->
       </div>
       <div class="social-wrapper">
-        <div class="social">
-          <img src="mmedia/icons/whatsapp.png" width="50" alt="Teléfono de contacto y WhatsApp">
-          <small>+34 666 66 66 66</small>
-        </div>
-        <div class="social">
-          <img src="mmedia/icons/linkedin.png" width="50" alt="Enlace a mi perfil de LikedIn">
-          <small>LinkedIn</small>
-        </div>
-        <div class="social">
-          <img src="mmedia/icons/github.png" width="50" alt="Enlace a mi perfil de GitHub">
-          <small>GitHub</small>
-        </div>
-        <div class="social">
-          <img src="mmedia/icons/reddit.png" width="50" alt="Enlace a mi perfil de Reddit">
-          <small>Reddit</small>
-        </div>
+        <a href="tel:+34666666666">
+          <div class="social">
+            <img src="mmedia/icons/whatsapp.png" width="50" alt="Teléfono">
+            <small>+34 666 66 66 66</small>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/">
+          <div class="social">
+            <img src="mmedia/icons/linkedin.png" width="50" alt="">
+            <small>LinkedIn</small>
+          </div>
+        </a>
+        <a href="https://github.com/">
+          <div class="social">
+            <img src="mmedia/icons/github.png" width="50" alt="">
+            <small>GitHub</small>
+          </div>
+        </a>
+        <a href="https://www.reddit.com/">
+          <div class="social">
+            <img src="mmedia/icons/reddit.png" width="50" alt="">
+            <small>Reddit</small>
+          </div>
+        </a>
       </div>
     </footer>
   </div>

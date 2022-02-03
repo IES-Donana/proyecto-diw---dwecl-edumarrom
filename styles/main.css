@@ -525,6 +525,13 @@ footer {
   box-shadow: 0 -8px 14px 0 rgba(0, 0, 0, .25);
 }
 
+#social-cabecera {
+  margin-top: .5em;
+  font-size: 2em;
+  font-weight: normal;
+  text-align: center;
+}
+
 .social-wrapper {
   margin: 0 20vw;
   display: flex;
