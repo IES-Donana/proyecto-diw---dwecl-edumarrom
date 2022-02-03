@@ -252,21 +252,25 @@
         <form action="#contacto" method="GET" role="form" aria-label="Formulario de contacto">
           <div class="contacto-wrapper">
             <div class="entrada">
+              <label for="nombre"></label>
               <input title="Tu nombre" aria-label="Nombre" type="text" name="nombre" id="nombre" required pattern="^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s]{2,44}"
                 maxlength="45" placeholder="Tu nombre">
             </div>
 
             <div class="entrada">
+              <label for="email"></label>
               <input title="Tu email" aria-label="Email" type="email" name="email" id="email" required maxlength="255"
                 pattern="^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$" placeholder="Tu email">
             </div>
 
             <div class="entrada">
+              <label for="asunto"></label>
               <input title="Asunto" aria-label="Asunto" type="text" name="asunto" id="asunto" required pattern="^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9\s]{4,120}"
                 placeholder="Asunto">
             </div>
 
             <div class="entrada">
+              <label for="mensaje"></label>
               <textarea title="Tu mensaje" aria-label="Mensaje" name="mensaje" id="mensaje" required minlength="10" maxlength="500" placeholder="Hey hello..."
                 disabled></textarea>
             </div>
