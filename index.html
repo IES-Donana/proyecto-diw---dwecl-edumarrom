@@ -218,7 +218,7 @@
 
       <section class="tarjeta testimonio">
         <div>
-          <p>
+          <p id="cita">
             <q>Me gusta trabajar con Eduardo. Hace cosas.</q>
             <cite>—Señor Aleatorio</cite>
           </p>
@@ -226,7 +226,7 @@
 
         <div class="testimonio-autor">
           <div id="contenedor-video">
-            <video id="testimonio-video" controls
+            <video id="testimonio-video" aria-labelledby="cita" controls
               poster="mmedia/images/testimonio-poster.png">
               <source src="mmedia/videos/testimonio.ogv" type="video/ogg">
               <source src="mmedia/videos/testimonio.mp4" type="audio/mp4">
@@ -281,7 +281,7 @@
 
     <footer>
       <div>
-        <p id="social-cabecera">Si me necesitas, ya sabes donde estoy</p>
+        <h2 id="social-cabecera">Si me necesitas, ya sabes donde estoy</h2>
         <!-- Desactivo la tarje de bienvenida -->
         <!-- <dialog id=" dialogo">
           <div id="dialogo-cabecera">
