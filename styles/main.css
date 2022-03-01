@@ -155,7 +155,7 @@ h3+small {
 }
 
 .testimonio div:last-of-type {
-  font-size: 0.75em;
+  font-size: .75em;
   text-align: right;
 }
 
@@ -477,7 +477,7 @@ hr {
 .entrada textarea {
   font-family: sans-serif;
   font-size: 1.2em;
-  background: rgba(218, 218, 218, 0.2);
+  background: rgba(218, 218, 218, .2);
   border: 0;
   border-radius: 10px;
   box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, .5);
@@ -493,7 +493,7 @@ hr {
   border-radius: 15px;
   box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, .5);
   cursor: pointer;
-  transition: transform 0.5s ease-out; /* UD4-T3.3 */
+  transition: transform .5s ease-out; /* UD4-T3.3 */
 }
 
 input:focus,
@@ -629,13 +629,13 @@ footer {
   border-radius: 15px;
   box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, .5);
   cursor: pointer;
-  transition: transform 0.5s ease-out; /* UD4-T3.3 *
+  transition: transform .5s ease-out; /* UD4-T3.3 *
 } */
 
 #dialogo-boton button {
   width: 160px;
   height: 2.5em;
-  margin: 0.25vh 0.5vw;
+  margin: .25vh .5vw;
   font-size: 1em;
   background-color: #3b6ea5;
   border-radius: 15px;

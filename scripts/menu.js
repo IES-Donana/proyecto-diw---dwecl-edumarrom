@@ -33,6 +33,12 @@ const contacto = document.createElement('a');
 contacto.setAttribute('href', '#contacto');
 contacto.textContent = 'Contacto';
 
+const buscador = document.createElement('input');
+contacto.setAttribute('type', 'text');
+
+const boton = document.createElement('button');
+boton.textContent = 'Buscar';
+
 // UD4-T3.4
 const logotipo = document.createElement('img');
 logotipo.setAttribute('src', 'mmedia/icons/emartinez-logo.svg');
