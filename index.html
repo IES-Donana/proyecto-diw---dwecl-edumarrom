@@ -52,7 +52,7 @@
           Vaya! :( Parece que tu navegador no soporta este vídeo.
         </video>
         <div id="bienvenida-texto">
-          <h1>Hey Hello!</h1>
+          <h1 lang="en">Hey Hello!</h1>
           <p>
             Me llamo Edu y soy estudiante en el Desarrollo
             de Aplicaciones Web.
@@ -144,7 +144,7 @@
             <div id="experiencia-wrapper">
               <div class="experiencia" tabindex="0">
                 <div class="experiencia-cabecera">
-                  <h3>Cristóbal Anillo</h3>
+                  <h3>Cristóbal Anillo <small>«Guías de turismo»</small></h3>
                 </div>
                 <div id="real-fernando" class="tarjeta experiencia-imagen">
                   <p>
@@ -157,7 +157,7 @@
 
               <div class="experiencia" tabindex="0">
                 <div class="experiencia-cabecera">
-                  <h3>Arvato - Bertelsmann</h3>
+                  <h3>Arvato - Bertelsmann <small>«Teleoperador especialista»</small></h3>
                 </div>
                 <div class="tarjeta experiencia-imagen" id="arvato">
                   <p>
@@ -170,7 +170,7 @@
 
               <div class="experiencia" tabindex="0">
                 <div class="experiencia-cabecera">
-                  <h3>Techmakers</h3>
+                  <h3>Techmakers <small>«Monitor de STEM»</small></h3>
                 </div>
                 <div class="tarjeta experiencia-imagen" id="techmakers">
                   <p>
@@ -190,21 +190,15 @@
           <div id="sobre-texto">
             <h2 id="sobre-cabecera">¿Y qué más hago aparte de trabajar?</h2>
             <p>
-              Hay muchas cosas de las que podría hablar. Una de mis aficiones es la
-              música. Desde pequeño tuve interés en los instrumentos y entre ellos la
-              guitarra. Lo que a mi me gustó desde el principio fueron los bajos eléctricos.
-              pero en casa lo que había era una elegante y vieja guitarra clásica.
-              Con ella descubrí lo gratificante de interpretar música y lo relajante que puede
-              ser sentarse a practicar y lograr hacer sonar los temas que te propones.
-              Mi técnica deja mucho que desear, pero eso no me impide disfrutar muchísimo de ella.
+              Una de mis aficiones es la música. Desde pequeño tuve interés en los instrumentos y
+              entre ellos la guitarra. Con ella descubrí lo gratificante de interpretar música y lo
+              relajante que puede ser sentarse a practicar y lograr hacer sonar los temas que te propones.
             </p>
 
             <p>
-              Tocar un instrumento me ayudó a interesarme por la música desde un punto de vista
-              más general, sobre como interactuamos con ella, sus efectos sobre nosotros, los
-              factores que determinan por qué sentimos ciertas cosas al escuchar ciertos tonos.
-              La música parece trascender de ser no sólo algo recreativo, sino algo tan importante
-              como un tratamiento para nuestra salud y bienestar.
+              Tocar un instrumento me ayudó a enteder mejor como la música influye en nosotros, cómo
+              nos hace sentir y experimentar distintas situaciones de nuestra vida. La música parece
+              trascender de ser no sólo algo recreativo, sino un verdadero pilar en nuestro bienestar.
             </p>
           </div>
 
@@ -226,8 +220,7 @@
 
         <div class="testimonio-autor">
           <div id="contenedor-video">
-            <video id="testimonio-video" aria-labelledby="cita" controls
-              poster="mmedia/images/testimonio-poster.png">
+            <video id="testimonio-video" aria-labelledby="cita" controls poster="mmedia/images/testimonio-poster.png">
               <source src="mmedia/videos/testimonio.ogv" type="video/ogg">
               <source src="mmedia/videos/testimonio.mp4" type="audio/mp4">
               Ups :( Parece que tu navegador no soporta este vídeo.
@@ -253,8 +246,8 @@
         <form action="#contacto" method="GET" aria-label="Formulario de contacto">
           <div class="contacto-wrapper">
             <div class="entrada">
-              <input title="Tu nombre" aria-label="Nombre" type="text" name="nombre" id="nombre" required pattern="^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s]{2,44}"
-                maxlength="45" placeholder="Tu nombre">
+              <input title="Tu nombre" aria-label="Nombre" type="text" name="nombre" id="nombre" required
+                pattern="^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s]{2,44}" maxlength="45" placeholder="Tu nombre">
             </div>
 
             <div class="entrada">
@@ -263,13 +256,13 @@
             </div>
 
             <div class="entrada">
-              <input title="Asunto" aria-label="Asunto" type="text" name="asunto" id="asunto" required pattern="^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9\s]{4,120}"
-                placeholder="Asunto">
+              <input title="Asunto" aria-label="Asunto" type="text" name="asunto" id="asunto" required
+                pattern="^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9\s]{4,120}" placeholder="Asunto">
             </div>
 
             <div class="entrada">
-              <textarea title="Tu mensaje" aria-label="Mensaje" name="mensaje" id="mensaje" required minlength="10" maxlength="500" placeholder="Hey hello..."
-                disabled></textarea>
+              <textarea title="Tu mensaje" aria-label="Mensaje" name="mensaje" id="mensaje" required minlength="10"
+                maxlength="500" placeholder="Hey hello..." disabled></textarea>
             </div>
             <div class="entrada">
               <button type="submit" id="enviar">¡Vamos allá!</button>
@@ -338,6 +331,23 @@
             <small>Reddit</small>
           </div>
         </a>
+      </div>
+      <div id="creditos-wrapper">
+        <div class="creditos">
+          Eduardo Martínez Romero
+        </div>
+        <div class="creditos">
+          Última modificación: 1 de marzo de 2022
+        </div>
+        <div class="creditos">
+          <a href="http://www.w3.org/WAI/WCAG1AA-Conformance"
+            title="Explanation of Level Double-A Conformance">
+            <img height="32" width="88"
+              src="http://www.w3.org/WAI/wcag1AA-blue"
+              alt="Level Double-A conformance icon,
+              W3C-WAI Web Content Accessibility Guidelines 1.0">
+          </a>
+        </div>
       </div>
     </footer>
   </div>

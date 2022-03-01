@@ -241,6 +241,7 @@ summary:hover {
 
 .proyecto {
   width: 25%;
+  font-size: 1.2em;
 }
 
 .proyecto-cabecera {
@@ -250,6 +251,7 @@ summary:hover {
 }
 
 .proyecto-imagen {
+  margin-bottom: 1vh;
   width: 18vw;
   height: 18vw;
   border-radius: 18vw;
@@ -332,6 +334,11 @@ hr {
   margin-bottom: -4vh;
 }
 
+.experiencia-cabecera small {
+  font-size: .5em;
+  font-weight: lighter;
+}
+
 .experiencia {
   font-size: larger;
 }
@@ -399,6 +406,10 @@ hr {
   padding-left: 5vw;
   width: 50%;
   font-size: larger;
+}
+
+#sobre-texto p {
+  font-size: 1.5em;
 }
 
 #sobre-cabecera {
@@ -551,6 +562,14 @@ footer {
 .social:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+#creditos-wrapper {
+  margin: 5vh 20vw;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /*----------------------------------
