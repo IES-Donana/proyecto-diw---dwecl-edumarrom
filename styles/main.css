@@ -527,7 +527,6 @@ button:hover {
 footer {
   padding-top: .5em;
   bottom: 0;
-  height: 30vh;
   background-color: rgba(59, 110, 165, .5);
   box-shadow: 0 -8px 14px 0 rgba(0, 0, 0, .25);
 }
@@ -571,6 +570,11 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+#logos {
+  display: flex;
+  flex-direction: row;
 }
 
 /*----------------------------------
@@ -643,7 +647,7 @@ footer {
 }
 
 /**************************
- * Breakpoint: DIspositivos móviles y tablets
+ * Breakpoint: Dispositivos móviles y tablets
  **************************/
 @media only screen and (max-width: 768px) {
 
@@ -831,5 +835,15 @@ footer {
 
   .social-wrapper {
     margin: 0 5vw;
+  }
+
+  /* Créditos */
+
+  #creditos-wrapper {
+    margin: 5vh 20vw;
+    padding-top: 2vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
