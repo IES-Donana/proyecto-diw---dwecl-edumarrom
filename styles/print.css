@@ -1,0 +1,73 @@
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  a {
+    display: block;
+  }
+
+  a[href]:after {
+     content: " (" attr(href) ")";
+  }
+
+  @page {
+    margin: 1cm;
+  }
+
+  @page :first {
+    margin: 2cm;
+  }
+
+  h1 {
+    counter-increment: page;
+    page-break-before: always;
+    padding-top: 2em;
+  }
+
+  /* h1:after {
+    content: counter(page);
+  } */
+
+  h1:first-child {
+    page-break-before: avoid;
+    counter-reset: page;
+  }
+
+  #print-head {
+    display: block;
+    position: fixed;
+    top: 0pt;
+    left:0pt;
+    right: 0pt;
+    font-size: 200%;
+    text-align: center;
+  }
+
+  span.pagina {
+    display: block;
+    position:relative;
+    top: 20cm;
+  }
+
+  span.pagina:after {
+    content: counter(page);
+  }
+
+  hr,
+  img,
+  nav,
+  video,
+  #contacto,
+  #logos {
+    display: none;
+  }
+
+  /* Salto de línea en la sección de experiencia laboral */
+
+  #cv {
+    page-break-before: always;
+  }
+
+}
