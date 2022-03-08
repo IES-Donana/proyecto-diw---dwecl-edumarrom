@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css" media="screen">
+  <link rel="stylesheet" href="styles/menu.css" media="screen">
+  <link rel="stylesheet" href="styles/print.css" media="print">
+  <link rel="icon" type="image/png" href="mmedia/icons/favicon.png">
+  <script defer src="scripts/main.js"></script>
+  <script defer src="scripts/menu.js"></script>
+  <script defer src="scripts/validar.js"></script>
+  <title>Eduardo Martínez - PortFolio</title>
+</head>
+
+<body>
+  <!-- Audio no aporta contexto a la entrega 5 -->
+  <!-- <audio id="bg-sound" autoplay loop>
+    <source src="mmedia/audios/bg-sound.ogg" type="audio/ogg">
+    <source src="mmedia/audios/bg-sound.mp3" type="audio/mpeg">
+    Vaya! :( Parece que tu navegador no soporta este audio.
+    /* Este audio está silenciado desde JS */
+  </audio> -->
+  <div class="menu-btn oculto">
+    <div class="menu-btn_burger"></div>
+  </div>
+
+  <!-- Aquí cae el menú lateral desplegable-->
+
+  <div id="inicio" class="flex-container" tabindex="0">
+    <header>
+      <!-- UD4-T3.2 -->
+      <div>
+        <img class="menu-logo fadeIn" src="mmedia/icons/emartinez-logo.svg" alt="">
+      </div>
+      <nav id="menu" tabindex="0">
+        <ul>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#cv">Experiencia</a></li>
+          <li><a href="#sobre">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="entrada">
+          <input type="text" id="buscador" title="buscador">
+        </div>
+        <div class="entrada">
+          <button>Buscar</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="bienvenida" class="tarjeta bienvenida" tabindex="0">
+        <video id="bienvenida-bgvideo" autoplay muted loop>
+          <source src="mmedia/videos/drops.webm" type="video/webm">
+          <source src="mmedia/videos/drops.mp4" type="video/mp4">
+          Vaya! :( Parece que tu navegador no soporta este vídeo.
+        </video>
+        <div id="bienvenida-texto">
+          <h1 lang="en">Hey Hello!</h1>
+          <p>
+            Me llamo Edu y soy estudiante en el Desarrollo
+            de Aplicaciones Web.
+          </p>
+        </div>
+
+        <div id="bienvenida-imagen"></div>
+      </section>
+
+      <section class="tarjeta testimonio" tabindex="0">
+        <div>
+          <p>
+            <q>Con Eduardo, un buen genio entró en mi oficina.</q>
+            <cite>—Diógenes de Sinope</cite>
+          </p>
+        </div>
+
+        <div class="testimonio-autor">
+          <div id="testimonio-img"></div>
+          <p><small>Fundador de la escuela online Cynism.cx</small></p>
+        </div>
+      </section>
+
+      <div class="tarjeta">
+        <section id="proyectos" tabindex="0">
+          <div>
+            <h2>Bueno...<br>¿y cómo es mi trabajo?</h2>
+            <p>Pues para muestra un botón (o varios)</p>
+          </div>
+
+          <div class="proyecto-wrapper">
+            <div class="proyecto">
+              <div class="proyecto-cabecera" tabindex="0">
+                <h3>Rentoy</h3>
+                <small>Juego de naipes</small>
+                <div id="cartas" class="proyecto-imagen"></div>
+              </div>
+              <p>
+                Desde que comencé a estudiar programación me preguntaba como
+                sería desarrollar el juego del Rentoy. Ahora lo sé, y es
+                un triunfo. <q>¡Envío!</q>
+              </p>
+            </div>
+
+            <div class="proyecto">
+              <div class="proyecto-cabecera" tabindex="0">
+                <h3>Recordor</h3>
+                <small>Notas y tareas</small>
+                <div id="notas" class="proyecto-imagen"></div>
+              </div>
+              <p>
+                Nadie se entiende mejor que uno mismo cuando se trata de
+                organizar nuestras ideas. ¿Por qué no hacer entonces tu
+                propia App de notas?
+              </p>
+            </div>
+
+            <div class="proyecto">
+              <div class="proyecto-cabecera" tabindex="0">
+                <h3>Chō-han</h3>
+                <small>Juego de dados</small>
+                <div id="dado" class="proyecto-imagen"></div>
+              </div>
+              <p>
+                Todo empezó por curiosear como implementar un dado.
+                Del dado pasé a un cubilete, y cuando quise darme cuenta
+                tenía un clásico juego nipón.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="cv">
+          <div id="cv-cabecera" tabindex="0">
+            <h2>¿Y dónde he estado todo este tiempo?</h2>
+          </div>
+
+          <div id="cv-wrapper">
+            <div id="fechas">
+              <p>2019-2021</p>
+              <p>2017-2019</p>
+              <p>2016-2017</p>
+            </div>
+
+            <div id="linea-temporal"></div>
+
+            <div id="experiencia-wrapper">
+              <div class="experiencia" tabindex="0">
+                <div class="experiencia-cabecera">
+                  <h3>Cristóbal Anillo <small>«Guías de turismo»</small></h3>
+                </div>
+                <div id="real-fernando" class="tarjeta experiencia-imagen">
+                  <p>
+                    La vida da muchas vueltas... y darlas en barco es mucho mejor.
+                    Realizábamos visitas al P.N. Doñana en un recorrido fluvial
+                    por el Guadalquivir.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experiencia" tabindex="0">
+                <div class="experiencia-cabecera">
+                  <h3>Arvato - Bertelsmann <small>«Teleoperador especialista»</small></h3>
+                </div>
+                <div class="tarjeta experiencia-imagen" id="arvato">
+                  <p>
+                    Participé en un proyecto de CRM donde gestionaba una cartera de
+                    clientes particulares, a los que asesoraba tanto a nivel
+                    técnico como a nivel comercial.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experiencia" tabindex="0">
+                <div class="experiencia-cabecera">
+                  <h3>Techmakers <small>«Monitor de STEM»</small></h3>
+                </div>
+                <div class="tarjeta experiencia-imagen" id="techmakers">
+                  <p>
+                    Siempre me ha llamado el mundo de la docencia, y aquí tuve la
+                    oportunidad de impartir cursos de STEM a grupos escolares,
+                    desde Primaría hasta ESO.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="sobre" class="tarjeta guitarra" tabindex="0">
+        <div id="sobre-wrapper">
+          <div id="sobre-texto">
+            <h2 id="sobre-cabecera">¿Y qué más hago aparte de trabajar?</h2>
+            <p>
+              Una de mis aficiones es la música. Desde pequeño tuve interés en los instrumentos y
+              entre ellos la guitarra. Con ella descubrí lo gratificante de interpretar música y lo
+              relajante que puede ser sentarse a practicar y lograr hacer sonar los temas que te propones.
+            </p>
+
+            <p>
+              Tocar un instrumento me ayudó a enteder mejor como la música influye en nosotros, cómo
+              nos hace sentir y experimentar distintas situaciones de nuestra vida. La música parece
+              trascender de ser no sólo algo recreativo, sino un verdadero pilar en nuestro bienestar.
+            </p>
+          </div>
+
+          <div id="sobre-imagen">
+            <div>
+              <!-- <img src="mmedia/images/paco-castillo.png" width="288" height="460" alt="Guitarra"> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tarjeta testimonio" tabindex="0">
+        <div>
+          <p id="cita">
+            <q>Me gusta trabajar con Eduardo. Hace cosas.</q>
+            <cite>—Señor Aleatorio</cite>
+          </p>
+        </div>
+
+        <div class="testimonio-autor">
+          <div id="contenedor-video">
+            <video id="testimonio-video" aria-labelledby="cita" controls poster="mmedia/images/testimonio-poster.png">
+              <source src="mmedia/videos/testimonio.ogv" type="video/ogg">
+              <source src="mmedia/videos/testimonio.mp4" type="audio/mp4">
+              Ups :( Parece que tu navegador no soporta este vídeo.
+            </video>
+            <!-- <iframe id="testimonio-video" src="https://www.youtube.com/embed/NDe13n_WpQA" title="YouTube video player"
+              allow="accelerometer; autoplay;
+              clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe> -->
+          </div>
+          <!-- Desactivo el details porque no aporta nada ninguna información -->
+          <!-- <details>
+            <summary>
+              <p><small>Fundador de la Startup 4Nerds</small></p>
+            </summary>
+            <img class="menu-logo spin" src="mmedia/icons/emartinez-logo.svg" alt="logotipo: emartinez">
+          </details> -->
+          <p><small>Fundador de la Startup 4Nerds</small></p>
+        </div>
+      </section>
+
+      <section id="contacto" tabindex="0">
+        <h2>¿Listo para trabajar juntos?</h2>
+        <form action="#contacto" method="GET" aria-label="Formulario de contacto">
+          <div class="contacto-wrapper">
+            <div class="entrada">
+              <input title="Tu nombre" aria-label="Nombre" type="text" name="nombre" id="nombre" required
+                pattern="^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s]{2,44}" maxlength="45" placeholder="Tu nombre">
+            </div>
+
+            <div class="entrada">
+              <input title="Tu email" aria-label="Email" type="email" name="email" id="email" required maxlength="255"
+                pattern="^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$" placeholder="Tu email">
+            </div>
+
+            <div class="entrada">
+              <input title="Asunto" aria-label="Asunto" type="text" name="asunto" id="asunto" required
+                pattern="^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9\s]{4,120}" placeholder="Asunto">
+            </div>
+
+            <div class="entrada">
+              <textarea title="Tu mensaje" aria-label="Mensaje" name="mensaje" id="mensaje" required minlength="10"
+                maxlength="500" placeholder="Hey hello..." disabled></textarea>
+            </div>
+            <div class="entrada">
+              <button type="submit" id="enviar">¡Vamos allá!</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h2 id="social-cabecera" tabindex="0">Si me necesitas, ya sabes donde estoy</h2>
+        <!-- Desactivo la tarje de bienvenida -->
+        <!-- <dialog id=" dialogo">
+          <div id="dialogo-cabecera">
+            <div>
+              <img class="menu-logo" src="mmedia/icons/emartinez-logo.svg" width="50" alt="logotipo">
+            </div>
+            <div>
+              <h4>Eduardo Martínez Romero</h4>
+            </div>
+          </div>
+          <div id="dialogo-contenido">
+            <div class="dialogo-entrada">
+              <img src="mmedia/icons/location.png" width="30" alt="Ubicación">
+              <a href="https://www.openstreetmap.org/?mlat=40.420886&mlon=-3.703314&zoom=15#map=19/40.42085/-3.70345"
+                target="_blank">
+                <span>C/ Desengaño, 21. Madrid -
+                  España</span>
+              </a>
+            </div>
+            <div class="dialogo-entrada">
+              <img src="mmedia/icons/email.png" width="30" alt="Email">
+              <a href="mailto:eduardo.martinez@iesdonana.org">
+                <span>eduardo.martinez@iesdonana.org</span>
+              </a>
+            </div>
+          </div>
+          <div id="dialogo-boton">
+            <button id="cerrar" onclick="document.getElementById('dialogo').close()">Cerrar</button>
+          </div>
+        </dialog> -->
+      </div>
+      <div class="social-wrapper">
+        <a href="tel:+34666666666">
+          <div class="social">
+            <img src="mmedia/icons/whatsapp.png" width="50" alt="Teléfono">
+            <small>+34 666 66 66 66</small>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/">
+          <div class="social">
+            <img src="mmedia/icons/linkedin.png" width="50" alt="">
+            <small>LinkedIn</small>
+          </div>
+        </a>
+        <a href="https://github.com/">
+          <div class="social">
+            <img src="mmedia/icons/github.png" width="50" alt="">
+            <small>GitHub</small>
+          </div>
+        </a>
+        <a href="https://www.reddit.com/">
+          <div class="social">
+            <img src="mmedia/icons/reddit.png" width="50" alt="">
+            <small>Reddit</small>
+          </div>
+        </a>
+      </div>
+      <div id="creditos-wrapper">
+        <div class="creditos">
+          Última modificación: 1 de marzo de 2022
+        </div>
+        <div class="creditos">
+          Este sitio web no utiliza cookies de ningún tipo.
+        </div>
+        <div id="logos">
+          <div class="creditos">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fies-donana.github.io%2Fproyecto-diw---dwecl-edumarrom%2F"
+              title="Código HTML5 validado">
+              <!-- https://www.w3.org/QA/Tools/Icons -->
+              <!-- https://github.com/bradleytaunt/html5-valid-badge -->
+              <img height="32" width="88"
+                src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/master/html5-validator-badge-blue.svg"
+                alt="Código conforme al estándar HTML5">
+            </a>
+          </div>
+          <div class="creditos">
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fies-donana.github.io%2Fproyecto-diw---dwecl-edumarrom%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"
+              title="Código CSS validado">
+              <!-- https://www.w3.org/QA/Tools/Icons -->
+              <img height="32" width="88" src="https://www.w3.org/Icons/valid-css-blue"
+                alt="Código conforme al estándar HTML5">
+            </a>
+          </div>
+          <div class="creditos">
+            <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explicación de conformidad WCAG 2 Nivel AA">
+              <!-- https://www.w3.org/WAI/standards-guidelines/wcag/conformance-logos/ -->
+              <img height="32" width="88" src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-blue-v"
+                alt="Nivel de conformidad AA, W3C WAI Web Content Accessibility Guidelines 2.1">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

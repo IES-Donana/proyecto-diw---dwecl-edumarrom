@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="timeline.css">
+  <script src="script/menu.js" defer></script>
+  <title>Eduardo Martínez - PortFolio</title>
+</head>
+<body>
+  <div class="menu-btn">
+    <div class="menu-btn_burger"></div>
+  </div>
+  <div id ="menu" class="menu-container active">
+    <ul>
+      <a href="#bienvenida"><li>Bienvenida</li></a>
+      <a href="#proyectos"><li>Proyectos</li></a>
+      <a href="#cv"><li>Experiencia</li></a>
+      <a href="#sobre"><li>Sobre mí</li></a>
+      <a href="#contacto"><li>Contacto</li></a>
+    </ul>
+  </div>
+  <div id="container">
+    <section id="bienvenida" class="tarjeta bienvenida">
+      <div id="bienvenida-texto">
+        <h1>Hey Hello!</h1>
+        <p>
+          Me llamo Edu y soy estudiante en el Desarrollo
+          de Aplicaciones Web.
+        </p>
+      </div>
+
+      <div id="bienvenida-imagen">
+
+      </div>
+    </section>
+
+    <section class="tarjeta testimonio">
+      <div>
+        <p>
+          <q>Con Eduardo, un buen genio entró en mi oficina.</q>
+          <cite>—Diógenes de Sinope</cite>
+        </p>
+      </div>
+
+      <div id="testimonio-autor">
+        <div id="testimonio-img"></div>
+        <p><small>Fundador de la escuela online Cynism.cx</small></p>
+      </div>
+    </section>
+
+    <div class="tarjeta">
+      <section id="proyectos">
+        <div>
+          <h2>Bueno...<br>¿y cómo es mi trabajo?</h2>
+          <p>Pues para muestra un botón (o varios)</p>
+        </div>
+
+        <div class="proyecto-wrapper">
+          <div class="proyecto">
+            <div class="proyecto-cabecera">
+              <h3>Rentoy</h3>
+              <small>Juego de naipes</small>
+              <div id="proyecto-imagen-cartas"></div>
+            </div>
+            <p>
+              Desde que comencé a estudiar programación me preguntaba como
+              sería desarrollar el juego del Rentoy. Ahora lo sé, y es
+              un triunfo. <q>¡Envío!</q>
+            </p>
+          </div>
+
+          <div class="proyecto">
+            <div class="proyecto-cabecera">
+              <h3>Recordor</h3>
+              <small>Notas y tareas</small>
+              <div id="proyecto-imagen-notas"></div>
+            </div>
+            <p>
+              Nadie se entiende mejor que uno mismo cuando se trata de
+              organizar nuestras ideas. ¿Por qué no hacer entonces tu
+              propia App de notas?
+            </p>
+          </div>
+
+          <div class="proyecto">
+            <div class="proyecto-cabecera">
+              <h3>Chō-han</h3>
+              <small>Juego de dados</small>
+              <div id="proyecto-imagen-dado"></div>
+            </div>
+            <p>
+              Todo empezó por curiosear como implementar un dado.
+              Del dado pasé a un cubilete, y cuando quise darme cuenta
+              tenía un clásico juego nipón.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="cv">
+        <div id="cv-cabecera">
+          <h2>¿Y dónde he estado todo este tiempo?</h2>
+        </div>
+
+        <div id="cv-wrapper">
+          <div id="fechas">
+            <p>2019-2021</p>
+            <p>2017-2019</p>
+            <p>2016-2017</p>
+          </div>
+
+          <div id="linea-temporal">
+            <div class="timeline">
+              <div class="container right">
+                <div class="content">
+                  <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <p><br></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="experiencia-wrapper">
+            <div class="experiencia">
+              <div class="experiencia-cabecera">
+                <h3>Cristóbal Anillo</h3>
+              </div>
+              <div class="tarjeta" id="real-fernando">
+                <p>
+                  La vida da muchas vueltas... y darlas en barco es mucho mejor.
+                  Realizábamos visitas al P.N. Doñana en un recorrido fluvial
+                  por el Guadalquivir.
+                </p>
+              </div>
+            </div>
+
+            <div class="experiencia">
+              <div class="experiencia-cabecera">
+                <h3>Arvato - Bertelsmann</h3>
+              </div>
+              <div class="tarjeta" id="arvato">
+                <p>
+                  Participé en un proyecto de CRM donde gestionaba una cartera de
+                  clientes particulares, a los que asesoraba tanto a nivel
+                  técnico como a nivel comercial.
+                </p>
+              </div>
+            </div>
+
+            <div class="experiencia">
+              <div class="experiencia-cabecera">
+                <h3>Techmakers</h3>
+              </div>
+              <div class="tarjeta" id="techmakers">
+                <p>
+                  Siempre me ha llamado el mundo de la docencia, y aquí tuve la
+                  oportunidad de impartir cursos de STEM a grupos escolares,
+                  desde Primaría hasta ESO.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="sobre" class="tarjeta guitarra">
+      <div id="sobre-wrapper">
+        <div id="sobre-texto">
+          <p id="sobre-cabecera">¿Y qué más hago aparte de trabajar?</p>
+          <p>
+            Hay muchas cosas de las que podría hablar. Una de mis aficiones es la
+            música. Desde pequeño tuve interés en los instrumentos y entre ellos la
+            guitarra. Lo que a mi me gustó desde el principio fueron los bajos eléctricos.
+            pero en casa lo que había era una elegante y vieja guitarra clásica.
+            Con ella descubrí lo gratificante de interpretar música y lo relajante que puede
+            ser sentarse a practicar y lograr hacer sonar los temas que te propones.
+            Mi técnica deja mucho que desear, pero eso no me impide disfrutar muchísimo de ella.
+          </p>
+
+          <p>
+            Tocar un instrumento me ayudó a interesarme por la música desde un punto de vista
+            más general, sobre como interactuamos con ella, sus efectos sobre nosotros, los
+            factores que determinan por qué sentimos ciertas cosas al escuchar ciertos tonos.
+            La música parece trascender de ser no sólo algo recreativo, sino algo tan importante
+            como un tratamiento para nuestra salud y bienestar.
+          </p>
+        </div>
+
+        <div id="sobre-imagen">
+          <div>
+            <!-- <img src="/mmedia/images/paco-castillo.png" width="288" height="460" alt="Guitarra"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tarjeta testimonio">
+      <div>
+        <p>
+          <q>Me gusta trabajar con Eduardo. Hace cosas.</q>
+          <cite>—Señor Aleatorio</cite>
+        </p>
+      </div>
+
+      <div id="testimonio-autor">
+        <div id="testimonio-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NDe13n_WpQA"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+        <p><small>Fundador de la Startup 4Nerds</small></p>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>¿Listo para trabajar juntos?</h2>
+      <form action="#" method="get">
+        <div class="contacto-wrapper">
+          <div class="entrada">
+            <label for="nombre" />
+            <input type="text" name="nombre" id="nombre"
+              required pattern="^[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s]{2,44}"
+              maxlength="45" placeholder="Tu nombre">
+          </div>
+
+          <div class="entrada">
+            <label for="email" />
+            <input type="email" name="email" id="mail"
+              required pattern="^[A-Za-z0-9._%+-]{1,64}@(?:[A-Za-z0-9-]{1,63}\.){1,125}[A-Za-z]{2,63}$"
+              maxlength="255" placeholder="Tu email">
+          </div>
+
+          <div class="entrada">
+            <label for="asunto" />
+            <input type="text" name="asunto" id="asunto"
+              required maxlength="255" placeholder="Asunto">
+          </div>
+
+          <div class="entrada">
+            <label for="mensaje" />
+            <textarea name="mensaje" id="mensaje"
+              required cols="85" rows="10" maxlength="255" placeholder="Hey hello..."></textarea>
+          </div>
+          <div class="entrada">
+            <button type="submit" id="enviar">¡Vamos allá!</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <h4>Si me necesitas, ya sabes donde estoy</h4>
+      <div class="social-wrapper">
+        <div class="social">
+          <img src="/mmedia/icons/whatsapp.png" width="50px" alt="Teléfono">
+          <small>+34 666 66 66 66</small>
+        </div>
+        <div class="social">
+          <img src="/mmedia/icons/linkedin.png" width="50px" alt="Enlace a mi LikedIn">
+          <small>LinkedIn</small>
+        </div>
+        <div class="social">
+          <img src="/mmedia/icons/github.png" width="50px" alt="Enlace a mi GitHub">
+          <small>GitHub</small>
+        </div>
+        <div class="social">
+          <img src="/mmedia/icons/reddit.png" width="50px" alt="Enlace a mi Reddit">
+          <small>Reddit</small>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
