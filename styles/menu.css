@@ -136,11 +136,22 @@ header {
   justify-content: space-around;
 }
 
-#menu {
+/* Antes de incluir el buscador */
+/* #menu {
   height: 10vh;
-  width: 75vw; /* Sin ésto los elementos del menú quedan muy apretados */
+  width: 75vw;
   margin: 0;
   padding-top: 5vh;
+} */
+
+/* Cambios introducidos para el buscador */
+#menu {
+  width: 75vw;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 /* UD4-T3.2 */

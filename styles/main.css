@@ -59,14 +59,6 @@ h3+small {
   margin-bottom: 30px;
 }
 
-/* Cambios de última hora :'( */
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: baseline;
-}
-
 /**************************
  * Estructuras básicas
  **************************/
